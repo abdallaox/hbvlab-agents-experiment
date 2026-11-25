@@ -1,6 +1,6 @@
 """Paper figures, written to paper/figures/ as PDF and PNG.
 
-fig1_maps:        pipeline test NSE across Great Britain, and its difference from LC-HBV and from FUSE Sacramento
+fig1_maps:        pipeline test NSE across Great Britain, and its difference from FUSE Sacramento
 fig2_cdf:         cumulative distributions of test NSE for the pipeline and the benchmarks
 fig3_agent:       agent against pipeline on the 95 representative catchments: CDF and per-catchment scatter
 fig4_hydrographs: observed and simulated flow in three showcase catchments, two test years
@@ -107,7 +107,7 @@ fig, ax = plt.subplots(figsize=(4.8, 4.2))
 for m in ("FUSE-TOPMODEL", "FUSE-ARNO/VIC", "FUSE-PRMS"):
     v = np.sort(per[f"{m}_NSE"].dropna())
     ax.plot(v, np.arange(1, len(v) + 1) / len(v), color=MAGENTA, lw=0.8, alpha=0.55, ls=(0, (5, 1, 1, 1)))
-series = [("pipeline", "HBV-Lab pipeline", BLUE, "-", 2.0), ("LC-HBV", "LC-HBV", ORANGE, "--", 1.5),
+series = [("pipeline", "HBV-Lab pipeline", BLUE, "-", 2.0),
           ("FUSE-Sacramento", "FUSE, four structures", MAGENTA, (0, (5, 1, 1, 1)), 1.5)]
 for key, lab, col, ls, lw in series:
     v = np.sort(per[f"{key}_NSE"].dropna())
@@ -125,8 +125,7 @@ rep = pd.read_csv(os.path.join(ROOT, "results", "agent_representative.csv"), ind
 sc = pd.read_csv(os.path.join(ROOT, "results", "runs_scored.csv"))
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.2, 3.5))
 for v, lab, col, ls in ((rep.pipeline_NSE, "Pipeline (median of 3 seeds)", BLUE, "-"),
-                        (rep.agent_NSE, "Agent (one run)", ORANGE, "--"),
-                        (rep["LC-HBV_NSE"], "LC-HBV", MUTED, ":")):
+                        (rep.agent_NSE, "Agent (one run)", ORANGE, "--")):
     v = np.sort(v.dropna().to_numpy())
     ax1.plot(v, (np.arange(1, len(v) + 1) - 0.5) / len(v), color=col, ls=ls, lw=1.6,
              label=f"{lab}, median {np.median(v):.2f}")
@@ -184,15 +183,21 @@ def simulate(g, path):
 
 def median_run(g, agent):
     r = sc[(sc.agent == agent) & (sc.gauge == g)].dropna(subset=["NSE_test"]).sort_values("NSE_test")
-    row = r.iloc[len(r) // 2]
+    if agent == "claude-api":            # the agent's run 1, the run of the representative sample (Fig. 6)
+        row = r[r["repeat"] == "r1"].iloc[0]
+    else:                                # the pipeline seed with the median test NSE
+        row = r.iloc[len(r) // 2]
     kind = "agents" if agent == "claude-api" else "baseline"
     return os.path.join(ROOT, "runs", kind, agent, str(g), row["repeat"]), row.NSE_test
 
 
-hydro = [(27009, "Ouse at Skelton, typical catchment"), (39014, "Ver at Hansteads, chalk, abstraction"),
-         (54003, "Vyrnwy at Vyrnwy Reservoir, reservoir outflow")]
+hydro = [(49002, "Hayle at St Erth, south-west England, groundwater-fed"),
+         (28009, "Trent at Colwick, Midlands, large lowland river"),
+         (67015, "Dee at Manley Hall, Wales, wet upland"),
+         (15006, "Tay at Ballathie, Scotland, with snow"),
+         (42010, "Itchen at Highbridge, southern England, chalk")]
 t0, t1 = "2000-10-01", "2002-09-30"
-fig, axs = plt.subplots(len(hydro), 1, figsize=(7.2, 6.4), sharex=True)
+fig, axs = plt.subplots(len(hydro), 1, figsize=(7.2, 9.6), sharex=True)
 for ax, (g, title) in zip(axs, hydro):
     pa, na = median_run(g, "claude-api")
     pp, npl = median_run(g, "pipeline")

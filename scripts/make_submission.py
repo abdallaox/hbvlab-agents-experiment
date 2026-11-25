@@ -54,26 +54,28 @@ for para in [
     "[Date]",
     "Editor-in-Chief, Environmental Modelling & Software",
     "Dear Editor,",
-    "We submit the research article \"HBV_Lab: an open HBV model that AI agents can set up, calibrate and diagnose "
+    "I submit the research article \"HBV-Lab: an open-source HBV model that AI agents can set up, calibrate and diagnose "
     "through the Model Context Protocol\" for consideration in Environmental Modelling & Software.",
     "Large language model agents can now call software tools, but whether they can calibrate a process-based model "
-    "reliably, and whether their work can be trusted, has not been tested at scale. The paper presents HBV_Lab, an open "
+    "reliably, and whether their work can be trusted, has not been tested at scale. The paper presents HBV-Lab, an open-source "
     "Python implementation of the HBV model with a Model Context Protocol (MCP) server that exposes its functions to "
-    "agents as typed tools. We first show that the package is credible: calibrated automatically on 661 CAMELS-GB "
-    "catchments it reaches a median test NSE of 0.82, level with a published HBV calibration and above four FUSE "
-    "models. We then let an AI agent calibrate HBV through the MCP server on 95 representative catchments, with only the "
-    "tools, the training data and a fixed prompt, and audit every run. The agent matches automatic calibration while "
-    "choosing its own set-up for each catchment and explaining its choices, at about US$0.11 per run.",
-    "We believe the work fits the journal's interest in environmental software, model evaluation and artificial "
+    "agents as typed tools. It first shows that the package is credible: calibrated automatically on 661 CAMELS-GB "
+    "catchments it reaches a median test NSE of 0.82, above four published FUSE models. It then lets an AI agent calibrate HBV through the MCP server on 95 representative "
+    "catchments, with only the tools, the training data and a fixed prompt, and audits every run. The agent matches "
+    "automatic calibration while choosing its own set-up for each catchment and explaining its choices.",
+    "I believe the work fits the journal's interest in environmental software, model evaluation and artificial "
     "intelligence techniques. It reports model and software performance against data, documents the algorithms, and "
-    "makes the software, the experiment code and every agent transcript openly available.",
-    "The automatic calibration is compared with an HBV benchmark from our related study, [status and reference of the "
-    "benchmark study], which is cited and not reused as a result of this paper. The manuscript has not been published "
-    "and is not under consideration elsewhere. All authors have approved the submission. We used an AI assistant "
-    "(Claude Code) in preparing the software and the manuscript, as declared in the manuscript.",
+    "makes the software (doi:10.5281/zenodo.24536891), the experiment code and every agent transcript "
+    "(doi:10.5281/zenodo.24536996) openly available.",
+    "This manuscript has not been "
+    "published and is not under consideration elsewhere. I used an AI assistant (Claude Code) in preparing the "
+    "software and the manuscript, as declared in the manuscript.",
     "[Optional: suggested reviewers with affiliations and emails.]",
     "Yours sincerely,",
-    "[Corresponding author name, affiliation, email]",
+    "Abdalla Mohammed",
+    "Department of Civil, Environmental and Geomatic Engineering, University College London, Gower Street, "
+    "London WC1E 6BT, United Kingdom",
+    "abdalla.mohammed.26@ucl.ac.uk",
 ]:
     doc.add_paragraph(para)
 doc.save(os.path.join(OUT, "cover_letter.docx"))

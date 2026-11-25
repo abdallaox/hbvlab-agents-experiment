@@ -34,7 +34,7 @@ def arrow(p0, p1, col=MUTED, lw=1.1):
 box(1, 36, 22, 20, GREY_L, "#b5b4ad", "Catchment", "CAMELS-GB data\n1970-1997 only\nfixed prompt")
 box(31, 36, 23, 20, ORANGE_L, ORANGE, "AI agent", "chooses ranges,\nstates, calibrations,\nwrites a diagnosis", ORANGE)
 box(31, 4, 23, 22, BLUE_L, BLUE, "MCP tools", "typed tools only\nfile sandbox\nrun budget, all logged", BLUE)
-box(1, 4, 22, 22, "white", INK, "HBV-Lab", "open Python HBV\nDDS calibration\n661 GB catchments")
+box(1, 4, 22, 22, "white", INK, "HBV-Lab", "open-source Python\nHBV model, DDS\n661 GB catchments")
 arrow((23, 46), (31, 46))
 arrow((40, 36), (40, 26), ORANGE, 1.3)
 arrow((45, 26), (45, 36), BLUE, 1.3)
@@ -57,7 +57,7 @@ axr.grid(color="#e4e3de", lw=0.5)
 axr.legend(loc="center left", bbox_to_anchor=(-0.02, 0.62), frameon=False, fontsize=5.8, title="median NSE", title_fontsize=5.8)
 fig.text(0.62, 0.97, "Agent matches automatic\ncalibration on 95 catchments", fontsize=7.0, fontweight="bold",
          color=INK, va="top")
-fig.text(0.62, 0.03, "about US$0.11 per run, every call audited", fontsize=6.0, color=MUTED)
+fig.text(0.62, 0.03, "every modelling choice explained and auditable", fontsize=6.0, color=MUTED)
 
 for ext in ("pdf", "png"):
     fig.savefig(os.path.join(OUT, f"graphical_abstract.{ext}"), dpi=300)

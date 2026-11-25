@@ -73,6 +73,31 @@ The study calibrates the HBV model of [HBV-Lab](https://github.com/abdallaox/HBV
 | `runs/baseline/pipeline/<gauge>/s<seed>/` | pipeline submissions |
 | `results/` | scored runs, audit, benchmark comparison, agent analyses, diagnosis check |
 
+## How to check a run
+
+Each agent run folder `runs/agents/claude-api/<gauge>/r<k>/` holds the full record of that run:
+
+- `catchment.json`: exactly what the agent was told about the catchment.
+- `transcript.jsonl`: one JSON record per line. The `start` and `tools` records hold the settings, the prompt and
+  the tool definitions with their SHA-256 hashes. Each `response` record is one model turn, including the model's
+  summarised reasoning (`thinking` blocks) and its tool calls. Each `tool` record is one tool call with its
+  arguments and the full reply the agent received. The `end` record is the run summary.
+- `server_events.jsonl`: the experiment server's own log (tools offered and removed, budget limits applied,
+  submission).
+- `submission.json`: the submitted parameters, ranges, initial states, the agent's diagnosis and the metrics it
+  reported. `summary.json`: tokens, cost, wall time, tool calls and errors.
+
+To reproduce the checks and scores (CAMELS-GB needed for the scores):
+
+```
+python scripts/audit_runs.py        # results/audit.csv: inputs, tools, sandbox, prompt and tool hashes per run
+python scripts/evaluate_runs.py     # results/runs_scored.csv: calibration and test scores of every submission
+python scripts/analyse_agent.py     # results/agent_behaviour.csv: each run's decisions (ranges, states, calibrations)
+python scripts/check_diagnoses.py   # results/diagnosis_check.csv: diagnoses against CAMELS-GB records
+```
+
+The figures of the paper are made by `scripts/figures.py`, `scripts/schematic.py` and `scripts/hbv_schematic.py`.
+
 ## Not included
 
 CAMELS-GB (Coxon et al., 2020, doi:10.5285/8344e4f3-d2ea-44f5-8afa-86d2987543a9) is not redistributed here,
