@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "HBV calibrated with DDS (about 4500 runs, NSE objective) on 1971-1997, after a one-year warm-up. Calibration performance: NSE 0.893, KGE 0.933, PBIAS +2%, r 0.946. The Mellte is a wet, steep and flashy catchment in Wales with little snow. The fitted parameters match that: a small, quickly saturating soil store (FC about 74 mm, close to the soil's available water capacity of 89 mm; BETA about 12, which is at the widened upper bound), fast upper-zone recession (K0 0.33, K1 0.27, UZL 37), little routing delay (MAXBAS about 1) and moderate baseflow (K2 0.028, PERC 3). Snow parameters barely matter and are poorly identified. BETA trades off against FC, so neither value is well identified. Widening the BETA range improved NSE only marginally. Likely weaknesses: the largest flood peaks (simulated maximum 63 vs observed 69 mm/d), summer low flows and the recessions after dry spells. The upstream reservoir, which the model does not represent, may also distort low flows. The model starts with the lower store well below its usual level, but the warm-up period absorbs this. I am moderately to highly confident in how well the model will transfer to 1998-2008. I expect an NSE of about 0.85-0.89 there, assuming the climate is similar.",
+ "parameters": {
+  "TT": 0.6127298698202873,
+  "CFMAX": 4.129347379850045,
+  "SFCF": 0.5426585515929372,
+  "CFR": 0.15314941377905866,
+  "CWH": 0.0005384874101157788,
+  "FC": 74.03881100580021,
+  "LP": 0.5810982572880719,
+  "BETA": 11.969008934580394,
+  "K0": 0.3274775937389599,
+  "K1": 0.2670095473119358,
+  "K2": 0.028456494306070293,
+  "UZL": 37.076617740084174,
+  "PERC": 2.963373503488933,
+  "MAXBAS": 1.0822141617381473
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   20.0,
+   600.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   12.0
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   5.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 30.0,
+  "upper_storage": 10.0,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8928,
+  "KGE": 0.9331,
+  "PBIAS": 2.0447,
+  "RMSE": 1.751,
+  "MAE": 0.9273,
+  "r": 0.9459
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 4503
+}

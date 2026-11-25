@@ -1,0 +1,53 @@
+{
+ "gauge_id": 28048,
+ "gauge_name": "Amber at Wingfield Park",
+ "location": {
+  "latitude": 53.06,
+  "longitude": -1.44
+ },
+ "topography": {
+  "area_km2": 128.63,
+  "mean_elevation_m": 158.0,
+  "gauge_elevation_m": 71.2,
+  "max_elevation_m": 341.5,
+  "mean_slope_m_per_km": 68.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.15,
+  "mean_pet_mm_per_day": 1.38,
+  "aridity_pet_over_p": 0.64,
+  "fraction_of_precipitation_as_snow": 0.027,
+  "high_precipitation_days_per_year": 18.64
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 6.77,
+  "evergreen_woodland": 0.61,
+  "grass_and_pasture": 62.79,
+  "shrub": 0.68,
+  "crops": 12.85,
+  "urban": 15.35
+ },
+ "soils": {
+  "sand_percent": 41.4,
+  "silt_percent": 34.54,
+  "clay_percent": 24.06,
+  "organic_percent": 0.61,
+  "total_available_water_capacity_mm": 98.11,
+  "root_depth_m": 1.18,
+  "depth_to_bedrock_m": 1.08
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.44,
+  "moderately_productive_fractured_aquifer": 80.91,
+  "low_productivity_fractured_aquifer": 0.05,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 12.06,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 6.55
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 6180.0
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "gauge_id": 25020,
+ "gauge_name": "Skerne at Preston le Skerne",
+ "location": {
+  "latitude": 54.61,
+  "longitude": -1.55
+ },
+ "topography": {
+  "area_km2": 152.76,
+  "mean_elevation_m": 112.0,
+  "gauge_elevation_m": 67.5,
+  "max_elevation_m": 218.3,
+  "mean_slope_m_per_km": 35.9
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.74,
+  "mean_pet_mm_per_day": 1.36,
+  "aridity_pet_over_p": 0.78,
+  "fraction_of_precipitation_as_snow": 0.025,
+  "high_precipitation_days_per_year": 16.66
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 5.55,
+  "evergreen_woodland": 0.37,
+  "grass_and_pasture": 28.56,
+  "shrub": 0.04,
+  "crops": 53.4,
+  "urban": 10.55
+ },
+ "soils": {
+  "sand_percent": 48.14,
+  "silt_percent": 27.55,
+  "clay_percent": 24.3,
+  "organic_percent": 1.67,
+  "total_available_water_capacity_mm": 103.8,
+  "root_depth_m": 1.3,
+  "depth_to_bedrock_m": 17.81
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 3.47,
+  "moderately_productive_fractured_aquifer": 0.02,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 24.44,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 72.07
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

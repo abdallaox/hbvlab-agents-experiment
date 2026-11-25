@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "HBV calibrated with DDS (5000 runs, NSE objective) on 1971-10 to 1997-12 after a one-year warm-up. Calibration NSE 0.817, KGE 0.857, PBIAS -1.4%, r 0.90. The Conwy is a wet, steep, flashy upland catchment with thin soils and little groundwater. The calibration matches this: small FC (~68 mm), very nonlinear runoff generation (BETA ~10.6, LP ~0.99), fast reservoirs (K0 0.32, K1 0.33), a moderate baseflow store (K2 0.065, PERC 2.3), and almost no routing delay (MAXBAS ~1). Snow plays a minor role. The model likely makes its largest errors on peak magnitudes during intense storms, where RMSE is high (2.9 mm/d), and on recessions during dry summers. The small reservoir and uncertainty in upland rainfall are also not represented. The objective surface is flat near the optimum. Widening the BETA range improved NSE by only 0.0003, so several parameters, especially BETA, LP and the snow parameters, are poorly identifiable. However, the simulated streamflow should be robust. I'm moderately confident that NSE in the independent period will be about 0.78\u20130.82.",
+ "parameters": {
+  "K0": 0.31900804868563676,
+  "K1": 0.3332993892914331,
+  "K2": 0.0648988986307996,
+  "UZL": 25.371996730814477,
+  "PERC": 2.3023393045187475,
+  "MAXBAS": 1.0010201364173854,
+  "TT": 0.2611593214243721,
+  "CFMAX": 3.3746257834943583,
+  "SFCF": 0.8581896382279566,
+  "CFR": 0.02124040815935875,
+  "CWH": 0.0003158982454081604,
+  "FC": 67.70921422643863,
+  "LP": 0.9930104839171436,
+  "BETA": 10.556192227470115
+ },
+ "ranges": {
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   5.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   20.0,
+   600.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   12.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 30.0,
+  "upper_storage": 10.0,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8174,
+  "KGE": 0.8571,
+  "PBIAS": -1.3692,
+  "RMSE": 2.9073,
+  "MAE": 1.386,
+  "r": 0.9044
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 5003
+}

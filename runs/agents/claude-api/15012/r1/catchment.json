@@ -1,0 +1,53 @@
+{
+ "gauge_id": 15012,
+ "gauge_name": "Tummel at Pitlochry",
+ "location": {
+  "latitude": 56.7,
+  "longitude": -3.72
+ },
+ "topography": {
+  "area_km2": 1666.33,
+  "mean_elevation_m": 485.0,
+  "gauge_elevation_m": 74.0,
+  "max_elevation_m": 1133.4,
+  "mean_slope_m_per_km": 166.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 4.22,
+  "mean_pet_mm_per_day": 1.08,
+  "aridity_pet_over_p": 0.26,
+  "fraction_of_precipitation_as_snow": 0.071,
+  "high_precipitation_days_per_year": 11.56
+ },
+ "land_cover_percent": {
+  "dominant": "Shrubs",
+  "deciduous_woodland": 2.93,
+  "evergreen_woodland": 11.65,
+  "grass_and_pasture": 24.48,
+  "shrub": 46.51,
+  "crops": 0.07,
+  "urban": 0.15
+ },
+ "soils": {
+  "sand_percent": 60.57,
+  "silt_percent": 21.82,
+  "clay_percent": 17.61,
+  "organic_percent": 9.27,
+  "total_available_water_capacity_mm": 90.79,
+  "root_depth_m": 0.69,
+  "depth_to_bedrock_m": 1.52
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 32.47,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 5.63,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 61.9
+ },
+ "reservoirs": {
+  "number": 8,
+  "total_capacity_megalitres": 381880.0
+ }
+}

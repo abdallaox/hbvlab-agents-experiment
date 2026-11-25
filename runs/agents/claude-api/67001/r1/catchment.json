@@ -1,0 +1,53 @@
+{
+ "gauge_id": 67001,
+ "gauge_name": "Dee at Bala",
+ "location": {
+  "latitude": 52.91,
+  "longitude": -3.58
+ },
+ "topography": {
+  "area_km2": 262.83,
+  "mean_elevation_m": 376.0,
+  "gauge_elevation_m": 159.2,
+  "max_elevation_m": 878.2,
+  "mean_slope_m_per_km": 153.6
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 5.08,
+  "mean_pet_mm_per_day": 1.29,
+  "aridity_pet_over_p": 0.25,
+  "fraction_of_precipitation_as_snow": 0.018,
+  "high_precipitation_days_per_year": 14.46
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 1.69,
+  "evergreen_woodland": 11.59,
+  "grass_and_pasture": 67.07,
+  "shrub": 16.06,
+  "crops": 0.14,
+  "urban": 0.35
+ },
+ "soils": {
+  "sand_percent": 43.95,
+  "silt_percent": 36.56,
+  "clay_percent": 19.49,
+  "organic_percent": 6.07,
+  "total_available_water_capacity_mm": 93.09,
+  "root_depth_m": 0.8,
+  "depth_to_bedrock_m": 0.98
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 31.95,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 6.76,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 61.28
+ },
+ "reservoirs": {
+  "number": 3,
+  "total_capacity_megalitres": 155198.0
+ }
+}

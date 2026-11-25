@@ -1,0 +1,53 @@
+{
+ "gauge_id": 74006,
+ "gauge_name": "Calder at Calder Hall",
+ "location": {
+  "latitude": 54.43,
+  "longitude": -3.49
+ },
+ "topography": {
+  "area_km2": 43.9,
+  "mean_elevation_m": 284.0,
+  "gauge_elevation_m": 26.4,
+  "max_elevation_m": 672.9,
+  "mean_slope_m_per_km": 161.4
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 4.79,
+  "mean_pet_mm_per_day": 1.27,
+  "aridity_pet_over_p": 0.27,
+  "fraction_of_precipitation_as_snow": 0.019,
+  "high_precipitation_days_per_year": 14.49
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 3.07,
+  "evergreen_woodland": 5.0,
+  "grass_and_pasture": 88.07,
+  "shrub": 0.66,
+  "crops": 2.64,
+  "urban": 0.72
+ },
+ "soils": {
+  "sand_percent": 46.08,
+  "silt_percent": 33.29,
+  "clay_percent": 20.62,
+  "organic_percent": 3.43,
+  "total_available_water_capacity_mm": 90.95,
+  "root_depth_m": 0.99,
+  "depth_to_bedrock_m": 2.05
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 24.5,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 17.09,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 58.41
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "gauge_id": 23007,
+ "gauge_name": "Derwent at Rowlands Gill",
+ "location": {
+  "latitude": 54.92,
+  "longitude": -1.74
+ },
+ "topography": {
+  "area_km2": 243.99,
+  "mean_elevation_m": 281.0,
+  "gauge_elevation_m": 26.2,
+  "max_elevation_m": 563.2,
+  "mean_slope_m_per_km": 92.0
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.26,
+  "mean_pet_mm_per_day": 1.28,
+  "aridity_pet_over_p": 0.56,
+  "fraction_of_precipitation_as_snow": 0.048,
+  "high_precipitation_days_per_year": 15.74
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 9.2,
+  "evergreen_woodland": 6.0,
+  "grass_and_pasture": 36.45,
+  "shrub": 32.68,
+  "crops": 9.51,
+  "urban": 4.22
+ },
+ "soils": {
+  "sand_percent": 39.93,
+  "silt_percent": 35.51,
+  "clay_percent": 24.56,
+  "organic_percent": 7.77,
+  "total_available_water_capacity_mm": 124.18,
+  "root_depth_m": 1.14,
+  "depth_to_bedrock_m": 1.16
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 28.62,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 9.53,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 61.84
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 50060.0
+ }
+}

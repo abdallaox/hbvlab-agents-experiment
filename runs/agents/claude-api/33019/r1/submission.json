@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "I calibrated the model with DDS against daily NSE over 1971-10 to 1997-12, after a one-year warm-up. I set the starting soil and groundwater stores close to their long-run levels so the run does not drift at the start. The full period gives NSE 0.863, KGE 0.92, bias +1.8% and r 0.94. The 1986-1997 part on its own gives NSE 0.877 and bias -0.6%. That part was not held out, since it is inside the calibration window, but it shows no drift between periods. The Thet responds slowly, with a low runoff ratio and a smooth hydrograph. The model reproduces this with a large soil store (FC about 390 mm, LP 0.70, BETA 3.1), which explains the strong evaporation losses. It also uses a groundwater recession of about 23 days (K2 0.043), PERC 1.5 and smoothing over about 4 days (MAXBAS 4.3). Snow matters little. The main weaknesses are probably the multi-year swings in chalk and sand groundwater, such as the drought years and wet winters, and the timing of the first wet-up in autumn. A single linear groundwater store cannot fully capture those slow changes. A second independent calibration found a different parameter set with a lower NSE (0.839), so several parameter combinations fit almost as well. I am fairly confident in the water balance and the overall dynamics. I am less confident in the individual response parameters (K0, UZL) and the snow parameters, which are poorly constrained.",
+ "parameters": {
+  "TT": 0.1814487787815931,
+  "CFMAX": 7.304966131100219,
+  "SFCF": 1.13573015887444,
+  "CFR": 0.0002887412161617824,
+  "CWH": 0.006778622680422302,
+  "FC": 392.84380469238596,
+  "LP": 0.7003897183690654,
+  "BETA": 3.122545647451986,
+  "K0": 0.2950886899797641,
+  "K1": 0.15511428934620972,
+  "K2": 0.04269340452507271,
+  "UZL": 80.37003728546965,
+  "PERC": 1.5202786306326506,
+  "MAXBAS": 4.308219386111483
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 250.0,
+  "upper_storage": 0.0,
+  "lower_storage": 10.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8626,
+  "KGE": 0.9199,
+  "PBIAS": 1.7918,
+  "RMSE": 0.1531,
+  "MAE": 0.1095,
+  "r": 0.9378
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 7006
+}

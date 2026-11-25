@@ -1,0 +1,53 @@
+{
+ "gauge_id": 72005,
+ "gauge_name": "Lune at Killington",
+ "location": {
+  "latitude": 54.31,
+  "longitude": -2.58
+ },
+ "topography": {
+  "area_km2": 219.24,
+  "mean_elevation_m": 317.0,
+  "gauge_elevation_m": 82.8,
+  "max_elevation_m": 675.6,
+  "mean_slope_m_per_km": 174.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 4.47,
+  "mean_pet_mm_per_day": 1.26,
+  "aridity_pet_over_p": 0.28,
+  "fraction_of_precipitation_as_snow": 0.024,
+  "high_precipitation_days_per_year": 14.57
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 1.51,
+  "evergreen_woodland": 1.6,
+  "grass_and_pasture": 89.61,
+  "shrub": 5.65,
+  "crops": 0.37,
+  "urban": 0.55
+ },
+ "soils": {
+  "sand_percent": 40.37,
+  "silt_percent": 36.19,
+  "clay_percent": 23.44,
+  "organic_percent": 3.09,
+  "total_available_water_capacity_mm": 105.29,
+  "root_depth_m": 1.15,
+  "depth_to_bedrock_m": 1.13
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.15,
+  "low_productivity_fractured_aquifer": 17.73,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 15.77,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 66.35
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "The Avon at Knapp Mill is a chalk catchment fed mainly by groundwater. I calibrated on the full 1971-10 to 1997-12 record with DDS (about 5,500 runs) against daily NSE. Before the second round I set the starting store levels close to their long-run means (soil 250 mm, lower store 30 mm), so the slow stores start near equilibrium.\n\nOver the calibration period the fit is good: NSE 0.90, KGE 0.94, PBIAS +1%, r 0.95. I did no split-sample validation, so I can't say how the fit will hold in a later period.\n\nThe parameters match a slow, heavily buffered system:\n- Large soil store (FC 407 mm, BETA 4.1, LP 0.81).\n- Slow lower store (K2 0.019 per day) with moderate percolation (PERC 1.6 mm/day).\n- The quick-flow outlet (K0) hardly comes into play because its threshold UZL is high (78 mm).\n\nSnow parameters have little effect: only about 1% of precipitation falls as snow, so they are poorly constrained. CWH sits at its lower bound, which doesn't matter.\n\nWeak points are likely to be the timing and size of winter peaks during groundwater flooding, and how fast summer recessions fall. A single linear groundwater store can't fully capture how the chalk aquifer behaves across wet and dry years. Seasonal autocorrelation of errors also probably inflates the NSE.\n\nI'm fairly confident in the response and soil parameters (FC, K1, K2, PERC); several of them likely trade off against each other. I'm not confident in the snow parameters or K0.",
+ "parameters": {
+  "TT": -1.2402518105070661,
+  "CFMAX": 2.7454244869482047,
+  "SFCF": 1.215747044707007,
+  "CFR": 0.04111758092519649,
+  "CWH": 0.0006630353311187632,
+  "FC": 406.95488255521593,
+  "LP": 0.8067809763888916,
+  "BETA": 4.131821729039492,
+  "K0": 0.1651623618263851,
+  "K1": 0.05174932880191401,
+  "K2": 0.018599310012789656,
+  "UZL": 78.48277445891028,
+  "PERC": 1.5584354981324091,
+  "MAXBAS": 3.562560815247073
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 250.0,
+  "upper_storage": 2.0,
+  "lower_storage": 30.0
+ },
+ "metrics_reported": {
+  "NSE": 0.9021,
+  "KGE": 0.9392,
+  "PBIAS": 1.0211,
+  "RMSE": 0.2625,
+  "MAE": 0.1796,
+  "r": 0.9502
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 5503
+}

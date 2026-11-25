@@ -1,0 +1,53 @@
+{
+ "gauge_id": 6007,
+ "gauge_name": "Ness at Ness-side",
+ "location": {
+  "latitude": 57.45,
+  "longitude": -4.26
+ },
+ "topography": {
+  "area_km2": 1830.73,
+  "mean_elevation_m": 375.0,
+  "gauge_elevation_m": 6.9,
+  "max_elevation_m": 1109.6,
+  "mean_slope_m_per_km": 178.6
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 5.02,
+  "mean_pet_mm_per_day": 1.07,
+  "aridity_pet_over_p": 0.21,
+  "fraction_of_precipitation_as_snow": 0.034,
+  "high_precipitation_days_per_year": 10.64
+ },
+ "land_cover_percent": {
+  "dominant": "Shrubs",
+  "deciduous_woodland": 3.24,
+  "evergreen_woodland": 16.93,
+  "grass_and_pasture": 27.79,
+  "shrub": 42.39,
+  "crops": 0.3,
+  "urban": 0.09
+ },
+ "soils": {
+  "sand_percent": 53.95,
+  "silt_percent": 22.9,
+  "clay_percent": 23.15,
+  "organic_percent": 12.33,
+  "total_available_water_capacity_mm": 115.72,
+  "root_depth_m": 0.9,
+  "depth_to_bedrock_m": 1.18
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 2.74,
+  "low_productivity_fractured_aquifer": 32.55,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 5.86,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 58.69
+ },
+ "reservoirs": {
+  "number": 13,
+  "total_capacity_megalitres": 8181419.0
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "gauge_id": 49004,
+ "gauge_name": "Gannel at Gwills",
+ "location": {
+  "latitude": 50.39,
+  "longitude": -5.06
+ },
+ "topography": {
+  "area_km2": 40.83,
+  "mean_elevation_m": 78.0,
+  "gauge_elevation_m": 8.8,
+  "max_elevation_m": 202.9,
+  "mean_slope_m_per_km": 71.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.9,
+  "mean_pet_mm_per_day": 1.41,
+  "aridity_pet_over_p": 0.49,
+  "fraction_of_precipitation_as_snow": 0.002,
+  "high_precipitation_days_per_year": 16.15
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 6.02,
+  "evergreen_woodland": 0.0,
+  "grass_and_pasture": 50.44,
+  "shrub": 1.91,
+  "crops": 37.26,
+  "urban": 4.23
+ },
+ "soils": {
+  "sand_percent": 43.58,
+  "silt_percent": 35.4,
+  "clay_percent": 21.02,
+  "organic_percent": 0.85,
+  "total_available_water_capacity_mm": 64.42,
+  "root_depth_m": 0.8,
+  "depth_to_bedrock_m": 1.14
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 92.12,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 7.88,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 0.0
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

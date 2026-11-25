@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "I calibrated the model with DDS on NSE over 1971-10 to 1997-12, using about 5000 runs in two rounds. In the second round the initial soil and groundwater stores started near their long-term average levels. Fit is moderate: daily NSE about 0.66, KGE 0.64, r 0.82. Two DDS runs with different seeds both stopped improving at about 0.66 and ended on very similar values for most parameters, which suggests the result is stable.\n\nThe model simulates about 17% more water than was observed. The likely reason is the large Derwent Reservoir, whose public-supply withdrawals and regulated releases take water out of the catchment, which HBV cannot represent. Because actual evaporation cannot exceed potential evaporation, the optimiser compensated with a large FC (about 600 mm), a low LP (0.57) to keep evaporation near its maximum, and SFCF of about 0.66 to cut snowfall.\n\nWeak points: low flows and recessions, which the reservoir controls and which tend to be overestimated; some flood peaks dampened by the reservoir; and snowmelt timing in cold winters, although snow is only about 5% of precipitation. My confidence is moderate. The routing and recession parameters (K1 about 0.25, K2 about 0.04, MAXBAS about 1.8) are well defined. The water-balance parameters (FC, LP, SFCF) are making up for the reservoir withdrawals. If abstraction changed during 1998-2008, NSE there may differ.",
+ "parameters": {
+  "FC": 600.3865099860782,
+  "LP": 0.5658055631389516,
+  "BETA": 3.3044153807774546,
+  "TT": 0.9119570745303367,
+  "CFMAX": 5.104164078811605,
+  "SFCF": 0.6562448132523613,
+  "CFR": 0.07951194713029086,
+  "CWH": 0.0002165360686043616,
+  "K0": 0.15183677670111634,
+  "K1": 0.24627761230729486,
+  "K2": 0.04107433200843012,
+  "UZL": 110.87236682986565,
+  "PERC": 1.80179462219322,
+  "MAXBAS": 1.7524814518416783
+ },
+ "ranges": {
+  "FC": [
+   30.0,
+   700.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   6.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 420.0,
+  "upper_storage": 1.0,
+  "lower_storage": 15.0
+ },
+ "metrics_reported": {
+  "NSE": 0.6591,
+  "KGE": 0.6367,
+  "PBIAS": 17.5523,
+  "RMSE": 0.5982,
+  "MAE": 0.3262,
+  "r": 0.8236
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 5003
+}

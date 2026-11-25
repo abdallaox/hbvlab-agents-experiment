@@ -1,0 +1,100 @@
+{
+ "model_id": "model-2",
+ "diagnosis": "The Kennet at Marlborough is a chalk catchment fed by groundwater. Observed runoff (about 0.5 mm/d) is far below precipitation minus PET (about 0.75 mm/d), which points to water leaving through groundwater outside the topographic catchment. Standard HBV with default ranges overpredicted volume (PBIAS +114%). A free calibration then made up for it with unrealistic snow parameters (TT=3, SFCF=0.4), reaching NSE 0.77 with bias still at +29%. Instead I used the lower zone as a deep-loss sink: K2 is fixed at 1e-6, so PERC (about 0.39 mm/d) acts as a constant loss to deep groundwater. The upper zone, with K1 about 0.017/d (a recession timescale of about 58 days), then represents the slowly reacting chalk aquifer. A large FC (about 440 mm), LP about 0.5 and a high BETA keep the response to rain smooth. Over 1971-1997 the calibration gives NSE 0.886, KGE 0.79, r 0.956 and PBIAS -7%. A version with a slightly larger K2 scored NSE 0.90, but its lower store kept filling and its outflow kept rising, so I rejected it as unlikely to hold in a later period. Remaining weaknesses: flow is underestimated slightly overall, and very wet groundwater-flood winters and deep drought recessions are less well matched. Snow parameters are poorly identified but matter little, since only 1.5% of precipitation falls as snow. I have moderate confidence in the response parameters. No split-sample validation was run, so the score on 1998-2008 is untested.",
+ "parameters": {
+  "TT": -1.6931693898179843,
+  "CFMAX": 3.3718299100542066,
+  "SFCF": 1.192588519186347,
+  "CFR": 0.25396396953488176,
+  "CWH": 0.0009262357325455714,
+  "K0": 0.7644715675424198,
+  "K1": 0.017316887830280875,
+  "K2": 1.0998190905235102e-06,
+  "UZL": 148.4365010203323,
+  "PERC": 0.39280481975765824,
+  "MAXBAS": 2.5859119712309546,
+  "FC": 438.336991036643,
+  "LP": 0.5058726355720413,
+  "BETA": 7.675515957677786
+ },
+ "ranges": {
+  "TT": [
+   -2.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.2
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   1.1e-06
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "FC": [
+   10.0,
+   1000.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   10.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 420.0,
+  "upper_storage": 25.0,
+  "lower_storage": 0.0
+ },
+ "metrics_reported": {
+  "NSE": 0.886,
+  "KGE": 0.7899,
+  "PBIAS": -7.0581,
+  "RMSE": 0.1727,
+  "MAE": 0.1369,
+  "r": 0.9562
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 7506
+}

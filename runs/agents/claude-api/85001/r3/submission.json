@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "I calibrated with DDS on NSE over 1971-10 to 1997-12. The first run used 3000 model runs and reached a daily NSE of 0.939. A second run of 2000 runs with a different random seed found nothing better, so the calibration has plateaued. Other scores were KGE 0.95, bias -0.5% and r 0.97.\n\nThe Leven drains Loch Lomond, so its flow is strongly smoothed. The model reproduces this mainly through a large, slowly draining upper store (K1 about 0.009 per day, a time constant of about 110 days, mean storage about 150 mm). There is also a threshold quick-flow component (UZL about 110 mm, K0 about 0.06) and MAXBAS about 3.5. The soil store is small (FC 52 mm) with high BETA and LP at 1. The \"lower\" store is small and not well constrained (K2 between 0.13 and 0.19 gave the same fit).\n\nSnow matters little: only about 2% of precipitation falls as snow. CWH ended at its lower bound and LP at its upper bound, but both bounds are physical limits and have little effect.\n\nLikely weaknesses:\n- The highest flood peaks are slightly too low; the largest simulated flow was 18.8 mm/day against 21.2 observed.\n- The model does not represent regulation by the loch and reservoir operations, which probably affects low flows.\n- The upper store starts at 10 mm and takes about a year to reach its typical level, roughly the length of the warm-up.\n\nI did not test on a separate validation period. Even so, the long calibration record and the stable optimum make me fairly confident the parameters will transfer to 1998-2008. I expect an NSE of about 0.9 there.",
+ "parameters": {
+  "K0": 0.058301882034982745,
+  "K1": 0.00906418337035971,
+  "K2": 0.1924529705527332,
+  "UZL": 111.05847074764563,
+  "PERC": 0.6159243413369004,
+  "MAXBAS": 3.6012989515818887,
+  "TT": 0.23212120475395806,
+  "CFMAX": 1.0203434172131287,
+  "SFCF": 0.8008016550625295,
+  "CFR": 0.2035872556708802,
+  "CWH": 2.2677654562541782e-06,
+  "FC": 52.1917285483948,
+  "LP": 0.9993689420899134,
+  "BETA": 6.997731022688786
+ },
+ "ranges": {
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   20.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 30.0,
+  "upper_storage": 10.0,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.9386,
+  "KGE": 0.9511,
+  "PBIAS": -0.5386,
+  "RMSE": 0.8765,
+  "MAE": 0.6607,
+  "r": 0.9689
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 5003
+}

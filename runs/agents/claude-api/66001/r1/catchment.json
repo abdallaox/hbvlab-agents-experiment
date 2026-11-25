@@ -1,0 +1,53 @@
+{
+ "gauge_id": 66001,
+ "gauge_name": "Clwyd at Pont-y-Cambwll",
+ "location": {
+  "latitude": 53.23,
+  "longitude": -3.39
+ },
+ "topography": {
+  "area_km2": 404.56,
+  "mean_elevation_m": 207.0,
+  "gauge_elevation_m": 15.3,
+  "max_elevation_m": 553.9,
+  "mean_slope_m_per_km": 117.6
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.51,
+  "mean_pet_mm_per_day": 1.31,
+  "aridity_pet_over_p": 0.52,
+  "fraction_of_precipitation_as_snow": 0.017,
+  "high_precipitation_days_per_year": 14.16
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 7.41,
+  "evergreen_woodland": 8.68,
+  "grass_and_pasture": 75.59,
+  "shrub": 1.14,
+  "crops": 4.71,
+  "urban": 2.23
+ },
+ "soils": {
+  "sand_percent": 41.58,
+  "silt_percent": 36.33,
+  "clay_percent": 22.08,
+  "organic_percent": 0.89,
+  "total_available_water_capacity_mm": 72.66,
+  "root_depth_m": 0.86,
+  "depth_to_bedrock_m": 4.02
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 3.6,
+  "low_productivity_fractured_aquifer": 16.18,
+  "highly_productive_intergranular_aquifer": 0.39,
+  "moderately_productive_intergranular_aquifer": 24.29,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 55.54
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

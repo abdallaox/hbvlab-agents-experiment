@@ -1,0 +1,100 @@
+{
+ "model_id": "model-6",
+ "diagnosis": "Lyon at Comrie Bridge has hydropower abstractions (the Loch Lyon / Breadalbane scheme). Observed runoff is only about 45% of precipitation, and evapotranspiration cannot explain the gap, so HBV has to lose water another way. The best fits do this in two ways. First, a low SFCF (~0.41) with TT ~1.3 removes part of the snowfall. Second, high PERC (~6 mm/d) feeds a lower store that drains very slowly (K2 ~2.4e-4), so the store behaves as a sink. Fast runoff is handled by the upper zone (K0 0.19, K1 0.24, UZL 28) with short routing (MAXBAS ~1.3). Because K2 is so small, the lower store keeps filling over a ~11-year run, so the water loss in the model changes over time. I calibrated the parameters with a fresh start (default initial stores) on an 11-year window (1986\u201397), matching the length of the scoring period. NSE was 0.68 on that window and 0.63 in an independent fresh-start test on 1971\u201382, with volume bias of -6% and -12%. Main weaknesses: large flood peaks are underestimated (earlier 1970s), baseflow is poorly represented, and flow released from the reservoirs is not modelled. The parameters are not physically meaningful (snow and soil values are at or near their bounds). If the scoring run starts from much fuller stores, flows would be overestimated. Confidence is moderate: expected NSE is about 0.6\u20130.68.",
+ "parameters": {
+  "K0": 0.19034795031782872,
+  "K1": 0.2401963948388939,
+  "K2": 0.00023795129899255605,
+  "UZL": 28.51952690647519,
+  "PERC": 6.118112909782611,
+  "MAXBAS": 1.2885491927332404,
+  "FC": 657.2554422774353,
+  "LP": 0.21064051845117715,
+  "BETA": 0.35261163070558743,
+  "TT": 1.2898727878892724,
+  "CFMAX": 7.496041742273084,
+  "SFCF": 0.4140664126989162,
+  "CFR": 0.0005080768522281419,
+  "CWH": 0.00016726243207023392
+ },
+ "ranges": {
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-05,
+   0.003
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.2,
+   8.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.2,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 30.0,
+  "upper_storage": 10.0,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.6799,
+  "KGE": 0.818,
+  "PBIAS": -5.6416,
+  "RMSE": 2.2317,
+  "MAE": 1.2698,
+  "r": 0.8298
+ },
+ "data_window": {
+  "start": "1985-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1986-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9417
+}

@@ -1,0 +1,53 @@
+{
+ "gauge_id": 41028,
+ "gauge_name": "Chess Stream at Chess Bridge",
+ "location": {
+  "latitude": 50.94,
+  "longitude": -0.27
+ },
+ "topography": {
+  "area_km2": 25.01,
+  "mean_elevation_m": 43.0,
+  "gauge_elevation_m": 4.6,
+  "max_elevation_m": 205.3,
+  "mean_slope_m_per_km": 46.9
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.32,
+  "mean_pet_mm_per_day": 1.35,
+  "aridity_pet_over_p": 0.58,
+  "fraction_of_precipitation_as_snow": 0.012,
+  "high_precipitation_days_per_year": 20.88
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 11.72,
+  "evergreen_woodland": 0.92,
+  "grass_and_pasture": 57.43,
+  "shrub": 0.0,
+  "crops": 24.76,
+  "urban": 5.4
+ },
+ "soils": {
+  "sand_percent": 42.99,
+  "silt_percent": 30.99,
+  "clay_percent": 26.01,
+  "organic_percent": 0.68,
+  "total_available_water_capacity_mm": 88.93,
+  "root_depth_m": 1.15,
+  "depth_to_bedrock_m": 10.07
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 9.79,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 24.12,
+  "moderately_productive_intergranular_aquifer": 31.43,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 34.66
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

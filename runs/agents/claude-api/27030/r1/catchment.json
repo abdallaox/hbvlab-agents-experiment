@@ -1,0 +1,53 @@
+{
+ "gauge_id": 27030,
+ "gauge_name": "Dearne at Adwick",
+ "location": {
+  "latitude": 53.51,
+  "longitude": -1.28
+ },
+ "topography": {
+  "area_km2": 310.98,
+  "mean_elevation_m": 105.0,
+  "gauge_elevation_m": 12.7,
+  "max_elevation_m": 376.4,
+  "mean_slope_m_per_km": 61.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.88,
+  "mean_pet_mm_per_day": 1.36,
+  "aridity_pet_over_p": 0.73,
+  "fraction_of_precipitation_as_snow": 0.022,
+  "high_precipitation_days_per_year": 17.87
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 11.96,
+  "evergreen_woodland": 0.7,
+  "grass_and_pasture": 34.17,
+  "shrub": 0.1,
+  "crops": 28.61,
+  "urban": 23.62
+ },
+ "soils": {
+  "sand_percent": 44.96,
+  "silt_percent": 30.36,
+  "clay_percent": 24.68,
+  "organic_percent": 0.6,
+  "total_available_water_capacity_mm": 87.79,
+  "root_depth_m": 1.07,
+  "depth_to_bedrock_m": 2.69
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.03,
+  "moderately_productive_fractured_aquifer": 84.87,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 13.03,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 2.08
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

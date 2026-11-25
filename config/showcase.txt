@@ -1,0 +1,21 @@
+# Showcase catchments for the agent runs (agreed 24 Nov 2026): round 1 of config/subset_ordered.csv
+# (one per aridity x BFI quartile class) plus two catchments that lose water: Ver 39014 (abstraction,
+# groundwater export) and Vyrnwy 54003 (reservoir).
+12001
+37008
+54008
+85001
+27009
+54012
+54019
+15011
+28046
+71001
+43009
+79006
+31021
+19001
+17004
+43021
+39014
+54003

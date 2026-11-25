@@ -1,0 +1,53 @@
+{
+ "gauge_id": 68003,
+ "gauge_name": "Dane at Rudheath",
+ "location": {
+  "latitude": 53.24,
+  "longitude": -2.5
+ },
+ "topography": {
+  "area_km2": 412.46,
+  "mean_elevation_m": 144.0,
+  "gauge_elevation_m": 13.2,
+  "max_elevation_m": 556.7,
+  "mean_slope_m_per_km": 59.9
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.24,
+  "mean_pet_mm_per_day": 1.35,
+  "aridity_pet_over_p": 0.6,
+  "fraction_of_precipitation_as_snow": 0.016,
+  "high_precipitation_days_per_year": 14.38
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 6.23,
+  "evergreen_woodland": 0.54,
+  "grass_and_pasture": 64.65,
+  "shrub": 4.67,
+  "crops": 11.85,
+  "urban": 11.58
+ },
+ "soils": {
+  "sand_percent": 48.15,
+  "silt_percent": 28.89,
+  "clay_percent": 22.95,
+  "organic_percent": 2.16,
+  "total_available_water_capacity_mm": 102.54,
+  "root_depth_m": 1.25,
+  "depth_to_bedrock_m": 24.63
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 8.85,
+  "low_productivity_fractured_aquifer": 0.01,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 40.87,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 49.36
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 1224.0
+ }
+}

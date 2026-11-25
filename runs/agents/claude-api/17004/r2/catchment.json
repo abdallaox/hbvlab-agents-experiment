@@ -1,0 +1,53 @@
+{
+ "gauge_id": 17004,
+ "gauge_name": "Ore at Balfour Mains",
+ "location": {
+  "latitude": 56.18,
+  "longitude": -3.08
+ },
+ "topography": {
+  "area_km2": 159.19,
+  "mean_elevation_m": 125.0,
+  "gauge_elevation_m": 23.0,
+  "max_elevation_m": 356.7,
+  "mean_slope_m_per_km": 54.2
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.39,
+  "mean_pet_mm_per_day": 1.27,
+  "aridity_pet_over_p": 0.53,
+  "fraction_of_precipitation_as_snow": 0.03,
+  "high_precipitation_days_per_year": 15.37
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 11.27,
+  "evergreen_woodland": 7.72,
+  "grass_and_pasture": 35.95,
+  "shrub": 0.5,
+  "crops": 29.27,
+  "urban": 12.46
+ },
+ "soils": {
+  "sand_percent": 39.76,
+  "silt_percent": 33.3,
+  "clay_percent": 26.93,
+  "organic_percent": 3.35,
+  "total_available_water_capacity_mm": 113.11,
+  "root_depth_m": 1.3,
+  "depth_to_bedrock_m": 5.64
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 1.18,
+  "low_productivity_fractured_aquifer": 2.13,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 17.89,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 78.8
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

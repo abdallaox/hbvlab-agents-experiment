@@ -1,0 +1,53 @@
+{
+ "gauge_id": 21022,
+ "gauge_name": "Whiteadder Water at Hutton Castle",
+ "location": {
+  "latitude": 55.79,
+  "longitude": -2.19
+ },
+ "topography": {
+  "area_km2": 502.23,
+  "mean_elevation_m": 236.0,
+  "gauge_elevation_m": 29.0,
+  "max_elevation_m": 534.5,
+  "mean_slope_m_per_km": 90.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.16,
+  "mean_pet_mm_per_day": 1.29,
+  "aridity_pet_over_p": 0.6,
+  "fraction_of_precipitation_as_snow": 0.052,
+  "high_precipitation_days_per_year": 15.89
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 4.13,
+  "evergreen_woodland": 6.34,
+  "grass_and_pasture": 39.05,
+  "shrub": 27.42,
+  "crops": 21.82,
+  "urban": 0.92
+ },
+ "soils": {
+  "sand_percent": 48.0,
+  "silt_percent": 29.58,
+  "clay_percent": 22.42,
+  "organic_percent": 4.31,
+  "total_available_water_capacity_mm": 105.65,
+  "root_depth_m": 1.2,
+  "depth_to_bedrock_m": 5.62
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 5.92,
+  "low_productivity_fractured_aquifer": 23.81,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 25.83,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 44.44
+ },
+ "reservoirs": {
+  "number": 2,
+  "total_capacity_megalitres": 9991.0
+ }
+}

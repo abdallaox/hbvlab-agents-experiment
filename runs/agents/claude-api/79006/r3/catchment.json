@@ -1,0 +1,53 @@
+{
+ "gauge_id": 79006,
+ "gauge_name": "Nith at Drumlanrig",
+ "location": {
+  "latitude": 55.27,
+  "longitude": -3.8
+ },
+ "topography": {
+  "area_km2": 469.04,
+  "mean_elevation_m": 328.0,
+  "gauge_elevation_m": 52.2,
+  "max_elevation_m": 722.7,
+  "mean_slope_m_per_km": 154.0
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 4.18,
+  "mean_pet_mm_per_day": 1.2,
+  "aridity_pet_over_p": 0.29,
+  "fraction_of_precipitation_as_snow": 0.029,
+  "high_precipitation_days_per_year": 12.77
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 1.79,
+  "evergreen_woodland": 15.36,
+  "grass_and_pasture": 66.18,
+  "shrub": 12.86,
+  "crops": 0.84,
+  "urban": 0.74
+ },
+ "soils": {
+  "sand_percent": 51.46,
+  "silt_percent": 24.05,
+  "clay_percent": 24.48,
+  "organic_percent": 10.94,
+  "total_available_water_capacity_mm": 123.8,
+  "root_depth_m": 1.12,
+  "depth_to_bedrock_m": 1.32
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 1.73,
+  "low_productivity_fractured_aquifer": 20.45,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 14.0,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 63.82
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 2888.0
+ }
+}

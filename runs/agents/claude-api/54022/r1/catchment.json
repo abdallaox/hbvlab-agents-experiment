@@ -1,0 +1,53 @@
+{
+ "gauge_id": 54022,
+ "gauge_name": "Severn at Plynlimon flume",
+ "location": {
+  "latitude": 52.47,
+  "longitude": -3.69
+ },
+ "topography": {
+  "area_km2": 8.75,
+  "mean_elevation_m": 501.0,
+  "gauge_elevation_m": 331.0,
+  "max_elevation_m": 736.4,
+  "mean_slope_m_per_km": 180.3
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 6.95,
+  "mean_pet_mm_per_day": 1.34,
+  "aridity_pet_over_p": 0.19,
+  "fraction_of_precipitation_as_snow": 0.024,
+  "high_precipitation_days_per_year": 14.42
+ },
+ "land_cover_percent": {
+  "dominant": "Evergreen Woodland",
+  "deciduous_woodland": 0.0,
+  "evergreen_woodland": 63.34,
+  "grass_and_pasture": 33.91,
+  "shrub": 2.78,
+  "crops": 0.0,
+  "urban": 0.0
+ },
+ "soils": {
+  "sand_percent": 43.68,
+  "silt_percent": 40.55,
+  "clay_percent": 15.78,
+  "organic_percent": 5.15,
+  "total_available_water_capacity_mm": 80.25,
+  "root_depth_m": 0.58,
+  "depth_to_bedrock_m": 1.0
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 49.84,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 0.0,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 50.16
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

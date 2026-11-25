@@ -1,0 +1,53 @@
+{
+ "gauge_id": 58006,
+ "gauge_name": "Mellte at Pontneddfechan",
+ "location": {
+  "latitude": 51.76,
+  "longitude": -3.57
+ },
+ "topography": {
+  "area_km2": 65.32,
+  "mean_elevation_m": 401.0,
+  "gauge_elevation_m": 86.4,
+  "max_elevation_m": 734.2,
+  "mean_slope_m_per_km": 131.7
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 5.43,
+  "mean_pet_mm_per_day": 1.32,
+  "aridity_pet_over_p": 0.24,
+  "fraction_of_precipitation_as_snow": 0.015,
+  "high_precipitation_days_per_year": 15.23
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 4.41,
+  "evergreen_woodland": 7.98,
+  "grass_and_pasture": 85.41,
+  "shrub": 1.55,
+  "crops": 0.16,
+  "urban": 0.08
+ },
+ "soils": {
+  "sand_percent": 40.48,
+  "silt_percent": 36.12,
+  "clay_percent": 23.41,
+  "organic_percent": 1.41,
+  "total_available_water_capacity_mm": 89.0,
+  "root_depth_m": 1.04,
+  "depth_to_bedrock_m": 0.98
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 7.73,
+  "low_productivity_fractured_aquifer": 32.38,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 5.04,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 54.85
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 3277.0
+ }
+}

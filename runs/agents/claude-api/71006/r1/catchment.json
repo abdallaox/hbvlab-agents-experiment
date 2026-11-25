@@ -1,0 +1,53 @@
+{
+ "gauge_id": 71006,
+ "gauge_name": "Ribble at Henthorn",
+ "location": {
+  "latitude": 53.85,
+  "longitude": -2.42
+ },
+ "topography": {
+  "area_km2": 446.17,
+  "mean_elevation_m": 238.0,
+  "gauge_elevation_m": 38.8,
+  "max_elevation_m": 691.4,
+  "mean_slope_m_per_km": 87.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.6,
+  "mean_pet_mm_per_day": 1.29,
+  "aridity_pet_over_p": 0.36,
+  "fraction_of_precipitation_as_snow": 0.019,
+  "high_precipitation_days_per_year": 13.17
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 3.04,
+  "evergreen_woodland": 2.13,
+  "grass_and_pasture": 77.28,
+  "shrub": 12.45,
+  "crops": 1.05,
+  "urban": 2.58
+ },
+ "soils": {
+  "sand_percent": 40.92,
+  "silt_percent": 35.34,
+  "clay_percent": 23.74,
+  "organic_percent": 3.38,
+  "total_available_water_capacity_mm": 107.1,
+  "root_depth_m": 1.16,
+  "depth_to_bedrock_m": 3.6
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 9.48,
+  "low_productivity_fractured_aquifer": 0.07,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 16.23,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 73.67
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

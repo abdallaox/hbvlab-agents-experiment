@@ -1,0 +1,53 @@
+{
+ "gauge_id": 16004,
+ "gauge_name": "Earn at Forteviot Bridge",
+ "location": {
+  "latitude": 56.35,
+  "longitude": -3.55
+ },
+ "topography": {
+  "area_km2": 783.9,
+  "mean_elevation_m": 274.0,
+  "gauge_elevation_m": 8.0,
+  "max_elevation_m": 978.6,
+  "mean_slope_m_per_km": 155.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.97,
+  "mean_pet_mm_per_day": 1.16,
+  "aridity_pet_over_p": 0.29,
+  "fraction_of_precipitation_as_snow": 0.036,
+  "high_precipitation_days_per_year": 13.87
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 7.33,
+  "evergreen_woodland": 7.93,
+  "grass_and_pasture": 46.53,
+  "shrub": 18.49,
+  "crops": 16.45,
+  "urban": 1.23
+ },
+ "soils": {
+  "sand_percent": 54.95,
+  "silt_percent": 28.77,
+  "clay_percent": 16.28,
+  "organic_percent": 3.15,
+  "total_available_water_capacity_mm": 81.66,
+  "root_depth_m": 0.92,
+  "depth_to_bedrock_m": 2.37
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 4.84,
+  "low_productivity_fractured_aquifer": 19.34,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 17.79,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 58.02
+ },
+ "reservoirs": {
+  "number": 3,
+  "total_capacity_megalitres": 82300.0
+ }
+}

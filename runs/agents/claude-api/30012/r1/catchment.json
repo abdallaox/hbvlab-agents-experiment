@@ -1,0 +1,53 @@
+{
+ "gauge_id": 30012,
+ "gauge_name": "Stainfield Beck at Cream Poke Farm",
+ "location": {
+  "latitude": 53.25,
+  "longitude": -0.31
+ },
+ "topography": {
+  "area_km2": 38.22,
+  "mean_elevation_m": 59.0,
+  "gauge_elevation_m": 7.7,
+  "max_elevation_m": 135.3,
+  "mean_slope_m_per_km": 29.0
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.69,
+  "mean_pet_mm_per_day": 1.4,
+  "aridity_pet_over_p": 0.82,
+  "fraction_of_precipitation_as_snow": 0.023,
+  "high_precipitation_days_per_year": 17.43
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 4.71,
+  "evergreen_woodland": 0.67,
+  "grass_and_pasture": 15.91,
+  "shrub": 0.0,
+  "crops": 77.02,
+  "urban": 1.64
+ },
+ "soils": {
+  "sand_percent": 45.18,
+  "silt_percent": 29.59,
+  "clay_percent": 25.23,
+  "organic_percent": 0.51,
+  "total_available_water_capacity_mm": 90.41,
+  "root_depth_m": 1.14,
+  "depth_to_bedrock_m": 6.69
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.12,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 25.68,
+  "low_productivity_intergranular_aquifer": 7.48,
+  "rocks_with_essentially_no_groundwater": 66.72
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

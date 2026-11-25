@@ -1,0 +1,53 @@
+{
+ "gauge_id": 38001,
+ "gauge_name": "Lee at Feildes Weir",
+ "location": {
+  "latitude": 51.76,
+  "longitude": 0.01
+ },
+ "topography": {
+  "area_km2": 1045.1,
+  "mean_elevation_m": 99.0,
+  "gauge_elevation_m": 27.7,
+  "max_elevation_m": 226.1,
+  "mean_slope_m_per_km": 36.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.7,
+  "mean_pet_mm_per_day": 1.43,
+  "aridity_pet_over_p": 0.84,
+  "fraction_of_precipitation_as_snow": 0.017,
+  "high_precipitation_days_per_year": 18.49
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 8.05,
+  "evergreen_woodland": 0.36,
+  "grass_and_pasture": 18.15,
+  "shrub": 0.01,
+  "crops": 56.53,
+  "urban": 16.56
+ },
+ "soils": {
+  "sand_percent": 35.97,
+  "silt_percent": 26.81,
+  "clay_percent": 37.22,
+  "organic_percent": 0.59,
+  "total_available_water_capacity_mm": 89.78,
+  "root_depth_m": 1.28,
+  "depth_to_bedrock_m": 1.18
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 9.3,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 30.14,
+  "low_productivity_intergranular_aquifer": 0.57,
+  "rocks_with_essentially_no_groundwater": 59.88
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

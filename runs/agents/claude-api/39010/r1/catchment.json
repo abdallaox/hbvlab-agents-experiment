@@ -1,0 +1,53 @@
+{
+ "gauge_id": 39010,
+ "gauge_name": "Colne at Denham",
+ "location": {
+  "latitude": 51.57,
+  "longitude": -0.48
+ },
+ "topography": {
+  "area_km2": 725.9,
+  "mean_elevation_m": 121.0,
+  "gauge_elevation_m": 34.1,
+  "max_elevation_m": 266.2,
+  "mean_slope_m_per_km": 42.7
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.9,
+  "mean_pet_mm_per_day": 1.42,
+  "aridity_pet_over_p": 0.75,
+  "fraction_of_precipitation_as_snow": 0.017,
+  "high_precipitation_days_per_year": 18.46
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 11.41,
+  "evergreen_woodland": 0.61,
+  "grass_and_pasture": 31.1,
+  "shrub": 0.03,
+  "crops": 32.25,
+  "urban": 23.81
+ },
+ "soils": {
+  "sand_percent": 42.1,
+  "silt_percent": 27.35,
+  "clay_percent": 30.55,
+  "organic_percent": 0.52,
+  "total_available_water_capacity_mm": 100.28,
+  "root_depth_m": 1.29,
+  "depth_to_bedrock_m": 1.16
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 17.92,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 29.94,
+  "low_productivity_intergranular_aquifer": 4.63,
+  "rocks_with_essentially_no_groundwater": 47.5
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 2728.0
+ }
+}

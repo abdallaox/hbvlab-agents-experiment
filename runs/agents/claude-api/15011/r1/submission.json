@@ -1,0 +1,100 @@
+{
+ "model_id": "model-3",
+ "diagnosis": "I'm submitting model-3, calibrated with DDS (NSE objective) on 1986-1997 after a one-year warm-up, starting from the default store levels. Its daily NSE is 0.68 with PBIAS -3% in that period. Restarted from the same default levels on 1971-1985, the same parameters give NSE 0.62 with PBIAS -1%. Run continuously over all of 1971-1997, they give NSE 0.61 with PBIAS +19%.\n\nThe catchment does not close its water balance. Mean flow is about 2.6 mm/d against 5.7 mm/d of rain and 1.1 mm/d of potential evaporation, probably because the Loch Lyon / Breadalbane hydropower scheme moves water out of the catchment. HBV has no proper loss term, so the calibration fakes one in three ways: the snow correction factor sits at its minimum of 0.4, soil capacity (FC) is very large at about 780 mm, and the lower groundwater store keeps filling during the run and drains very slowly (K2 about 3e-4). Two attempts at a steadier loss scored worse (NSE 0.59).\n\nBecause that store keeps filling, results depend on how long the run is and where it starts. A short run from default store levels should behave like these tests (NSE about 0.62-0.68). A run started in 1970 would drift towards too much flow. Peaks and low flows that are set by the regulated reservoirs are reproduced poorly. Confidence in the individual parameters is low, because they mostly make up for the diversion rather than describe real catchment behaviour.",
+ "parameters": {
+  "TT": 1.2674283324193385,
+  "CFMAX": 7.199737704147139,
+  "SFCF": 0.4011004291542162,
+  "CFR": 0.007710347119588609,
+  "CWH": 0.0033619206219419988,
+  "FC": 781.2439621151359,
+  "LP": 0.4136432333782601,
+  "BETA": 0.503284,
+  "K0": 0.1909611162475334,
+  "K1": 0.25494965243807133,
+  "K2": 0.0002783500461286747,
+  "UZL": 29.713560489008824,
+  "PERC": 6.398540125866273,
+  "MAXBAS": 1.1036449979311322
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 30.0,
+  "upper_storage": 10.0,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.6786,
+  "KGE": 0.8144,
+  "PBIAS": -2.9809,
+  "RMSE": 2.2178,
+  "MAE": 1.284,
+  "r": 0.828
+ },
+ "data_window": {
+  "start": "1986-01-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1986-12-31 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9009
+}

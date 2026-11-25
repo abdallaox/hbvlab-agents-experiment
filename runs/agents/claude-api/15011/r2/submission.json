@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "Calibration NSE is 0.68 (KGE 0.78, PBIAS about 0%) for 1971\u20131997. On 1989\u20131997, run as a separate check, NSE is 0.69 and PBIAS is -1%, so performance looks stable over time. This is a regulated catchment: the Loch Lyon and Loch an Daimh hydro reservoirs divert water. Observed runoff (about 2.65 mm/d) is far below precipitation minus PET (about 4.6 mm/d), so the standard HBV water balance cannot close. I closed it with two non-physical choices. First, PERC (about 6.7 mm/d) drains the upper zone into a lower store that acts as a near-permanent sink (K2 = 1e-6). This mimics the hydro intakes capturing flow up to a capacity limit. Second, that lower store starts at 1e6 mm, so it releases an almost constant baseflow of about 1 mm/d, standing in for compensation flows. Its level drifted only about 1% over 27 years, so the setup does not change over time. SFCF (about 0.4) also removes some snow water. Weaknesses: floods are smoothed by the reservoirs and diversions, so peaks are underestimated (simulated maximum 42 vs 60 mm/d observed). Low flows are simulated as a flat constant. Snow and the soil parameters (FC about 790, BETA about 0.5) are only loosely identifiable. I trust the water balance and the stable timing, but the parameters are compensating for missing regulation processes, so the individual values have little physical meaning.",
+ "parameters": {
+  "TT": 1.469845715026148,
+  "CFMAX": 8.281659101243303,
+  "SFCF": 0.3986516783886614,
+  "CFR": 0.0005846779262314856,
+  "CWH": 0.001259906375939804,
+  "K0": 0.19495964543165026,
+  "K1": 0.24649142304097016,
+  "K2": 1.4806499232767767e-06,
+  "UZL": 35.2801714541464,
+  "PERC": 6.695648119282604,
+  "MAXBAS": 1.0655810399490329,
+  "FC": 787.1677506473436,
+  "LP": 0.4861595067936786,
+  "BETA": 0.5126423777571716
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.2,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-08,
+   1.5e-06
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.2,
+   8.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 520.0,
+  "upper_storage": 4.0,
+  "lower_storage": 1000000.0
+ },
+ "metrics_reported": {
+  "NSE": 0.6822,
+  "KGE": 0.7824,
+  "PBIAS": 0.0429,
+  "RMSE": 1.9089,
+  "MAE": 1.0831,
+  "r": 0.827
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9509
+}

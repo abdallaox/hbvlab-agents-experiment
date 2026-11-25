@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "The Dun at Hungerford is a chalk/groundwater-dominated catchment with very damped flow (observed Q ranges 0.16 to 2.6 mm/d). Calibration over 1971-1997 (DDS, NSE) gives NSE 0.70, KGE 0.85, PBIAS +3%. In a split-sample test (calibrated 1971-85, validated 1986-97), validation NSE was about 0.73, with a +14% volume bias. The water balance cannot close as given: observed runoff (~0.6 mm/d) is larger than P minus PET would allow, which points to groundwater export or precipitation overestimation. HBV has no loss term, so the optimiser uses the snow routine as a loss mechanism instead (TT ~4.6 \u00b0C, SFCF ~0.47, very fast melt). This removes part of the cold-season rain and is not a real snow process. A version with physically sensible snow parameters had a +16-21% volume bias and lower calibration NSE (0.53 vs 0.63-0.65 for the loss versions). Its validation NSE was similar (0.72 vs 0.73). Because the loss depends on temperature, a warmer future period could bring some overestimation. Other parameters: large FC (~600 mm) with LP ~0.55 to maximise ET, and a slow baseflow store (K2 ~0.021, K1 ~0.04, PERC ~3.6). Weaknesses: timing of individual peaks, multi-year groundwater memory (droughts and recessions) and volume bias. I am fairly confident in the response parameters but not in the snow and soil parameters, which mainly act as a correction for the water balance.",
+ "parameters": {
+  "TT": 4.600717550694169,
+  "CFMAX": 19.992221976167137,
+  "SFCF": 0.4706925336644283,
+  "CFR": 0.00109454779813592,
+  "CWH": 0.0023897732241919094,
+  "K0": 0.1553675498736647,
+  "K1": 0.039687554814299114,
+  "K2": 0.021186463052720705,
+  "UZL": 29.420635933588137,
+  "PERC": 3.5701436991160023,
+  "MAXBAS": 1.2881622858976245,
+  "FC": 602.4291144733683,
+  "LP": 0.5506785424248511,
+  "BETA": 3.21701075970311
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   6.0
+  ],
+  "CFMAX": [
+   0.5,
+   20.0
+  ],
+  "SFCF": [
+   0.1,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 450.0,
+  "upper_storage": 0.0,
+  "lower_storage": 28.0
+ },
+ "metrics_reported": {
+  "NSE": 0.7023,
+  "KGE": 0.8548,
+  "PBIAS": 3.0424,
+  "RMSE": 0.1986,
+  "MAE": 0.1477,
+  "r": 0.8581
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9710
+}

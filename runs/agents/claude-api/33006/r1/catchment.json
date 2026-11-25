@@ -1,0 +1,53 @@
+{
+ "gauge_id": 33006,
+ "gauge_name": "Wissey at Northwold Total",
+ "location": {
+  "latitude": 52.54,
+  "longitude": 0.61
+ },
+ "topography": {
+  "area_km2": 259.37,
+  "mean_elevation_m": 46.0,
+  "gauge_elevation_m": 5.3,
+  "max_elevation_m": 94.3,
+  "mean_slope_m_per_km": 19.6
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.79,
+  "mean_pet_mm_per_day": 1.45,
+  "aridity_pet_over_p": 0.81,
+  "fraction_of_precipitation_as_snow": 0.018,
+  "high_precipitation_days_per_year": 17.43
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 9.43,
+  "evergreen_woodland": 6.96,
+  "grass_and_pasture": 25.88,
+  "shrub": 0.1,
+  "crops": 53.81,
+  "urban": 3.67
+ },
+ "soils": {
+  "sand_percent": 65.82,
+  "silt_percent": 18.83,
+  "clay_percent": 15.35,
+  "organic_percent": 0.82,
+  "total_available_water_capacity_mm": 83.23,
+  "root_depth_m": 1.25,
+  "depth_to_bedrock_m": 4.91
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 12.04,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 19.17,
+  "low_productivity_intergranular_aquifer": 10.23,
+  "rocks_with_essentially_no_groundwater": 58.55
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

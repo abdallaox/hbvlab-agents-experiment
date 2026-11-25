@@ -1,0 +1,53 @@
+{
+ "gauge_id": 28009,
+ "gauge_name": "Trent at Colwick",
+ "location": {
+  "latitude": 52.95,
+  "longitude": -1.08
+ },
+ "topography": {
+  "area_km2": 7466.4,
+  "mean_elevation_m": 142.0,
+  "gauge_elevation_m": 16.0,
+  "max_elevation_m": 635.5,
+  "mean_slope_m_per_km": 53.7
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.04,
+  "mean_pet_mm_per_day": 1.38,
+  "aridity_pet_over_p": 0.68,
+  "fraction_of_precipitation_as_snow": 0.023,
+  "high_precipitation_days_per_year": 15.48
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 6.39,
+  "evergreen_woodland": 1.06,
+  "grass_and_pasture": 45.52,
+  "shrub": 1.76,
+  "crops": 25.02,
+  "urban": 18.93
+ },
+ "soils": {
+  "sand_percent": 45.79,
+  "silt_percent": 28.34,
+  "clay_percent": 25.87,
+  "organic_percent": 0.78,
+  "total_available_water_capacity_mm": 92.36,
+  "root_depth_m": 1.19,
+  "depth_to_bedrock_m": 3.7
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.7,
+  "moderately_productive_fractured_aquifer": 21.49,
+  "low_productivity_fractured_aquifer": 12.54,
+  "highly_productive_intergranular_aquifer": 6.56,
+  "moderately_productive_intergranular_aquifer": 30.13,
+  "low_productivity_intergranular_aquifer": 0.04,
+  "rocks_with_essentially_no_groundwater": 27.65
+ },
+ "reservoirs": {
+  "number": 18,
+  "total_capacity_megalitres": 155932.0
+ }
+}

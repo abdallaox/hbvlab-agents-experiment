@@ -1,0 +1,53 @@
+{
+ "gauge_id": 29005,
+ "gauge_name": "Rase at Bishopbridge",
+ "location": {
+  "latitude": 53.41,
+  "longitude": -0.45
+ },
+ "topography": {
+  "area_km2": 63.27,
+  "mean_elevation_m": 49.0,
+  "gauge_elevation_m": 4.1,
+  "max_elevation_m": 160.8,
+  "mean_slope_m_per_km": 28.8
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.7,
+  "mean_pet_mm_per_day": 1.38,
+  "aridity_pet_over_p": 0.81,
+  "fraction_of_precipitation_as_snow": 0.021,
+  "high_precipitation_days_per_year": 16.77
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 6.02,
+  "evergreen_woodland": 8.5,
+  "grass_and_pasture": 23.75,
+  "shrub": 0.0,
+  "crops": 57.51,
+  "urban": 4.19
+ },
+ "soils": {
+  "sand_percent": 45.78,
+  "silt_percent": 28.07,
+  "clay_percent": 26.14,
+  "organic_percent": 0.81,
+  "total_available_water_capacity_mm": 99.67,
+  "root_depth_m": 1.27,
+  "depth_to_bedrock_m": 16.23
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 5.11,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 2.53,
+  "moderately_productive_intergranular_aquifer": 13.98,
+  "low_productivity_intergranular_aquifer": 34.96,
+  "rocks_with_essentially_no_groundwater": 43.41
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

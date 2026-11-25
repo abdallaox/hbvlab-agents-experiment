@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "For the Spey at Boat of Garten I calibrated with DDS on daily NSE over 1971-10 to 1997-12, after a one-year warm-up. I ran three rounds totalling 6,500 model runs, from two different starting states. The best fit was NSE 0.736, KGE 0.78, r 0.86, with simulated flow on average about 7% higher than observed (PBIAS +7%).\n\nThe fit levelled off at about 0.734-0.736 in every round, so a better result is unlikely within this model structure.\n\nThe main problem is the water balance. Observed runoff (about 2 mm/day) is well below rainfall minus potential evaporation (3.6 minus 1.05 mm/day). To lose that much water, the model pushed evaporation as high as it can go (LP about 0.08, BETA about 0.36) and cut snowfall to less than half (SFCF about 0.46, with TT about 1.7\u00b0C). These snow settings are making up for the missing water rather than describing real snow, so I am not confident in the snow parameters or the evaporation (LP/BETA) values. Even so, flow is still slightly too high.\n\nThe routing parameters are fairly well defined: K1 about 0.19, K2 about 0.04, MAXBAS about 2.5, PERC about 3.3, FC about 370 mm. Likely weak spots are the timing of snowmelt in winter and spring, the largest flood peaks, and the effect of the three upstream reservoirs.\n\nI didn't test on a separate period, so I can't say how well this holds up. My guess is an NSE of about 0.70-0.73 for 1998-2008.",
+ "parameters": {
+  "K0": 0.038575584587099386,
+  "K1": 0.1860299891212896,
+  "K2": 0.03942613983438239,
+  "UZL": 12.441314481582602,
+  "PERC": 3.2935304310997657,
+  "MAXBAS": 2.491385923843308,
+  "FC": 366.5680676941781,
+  "LP": 0.07662469670753266,
+  "BETA": 0.35954322119458504,
+  "TT": 1.6906318083019878,
+  "CFMAX": 7.941832148943434,
+  "SFCF": 0.45702019475940714,
+  "CFR": 0.0038137312882022684,
+  "CWH": 0.0001210259317523622
+ },
+ "ranges": {
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "FC": [
+   30.0,
+   800.0
+  ],
+  "LP": [
+   0.05,
+   1.0
+  ],
+  "BETA": [
+   0.3,
+   8.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.2,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 225.0,
+  "upper_storage": 2.0,
+  "lower_storage": 35.0
+ },
+ "metrics_reported": {
+  "NSE": 0.7364,
+  "KGE": 0.7764,
+  "PBIAS": 7.1865,
+  "RMSE": 0.9365,
+  "MAE": 0.6031,
+  "r": 0.8625
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 6504
+}

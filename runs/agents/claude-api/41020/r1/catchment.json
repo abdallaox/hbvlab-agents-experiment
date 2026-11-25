@@ -1,0 +1,53 @@
+{
+ "gauge_id": 41020,
+ "gauge_name": "Bevern Stream at Clappers Bridge",
+ "location": {
+  "latitude": 50.93,
+  "longitude": 0.02
+ },
+ "topography": {
+  "area_km2": 35.48,
+  "mean_elevation_m": 51.0,
+  "gauge_elevation_m": 9.6,
+  "max_elevation_m": 247.4,
+  "mean_slope_m_per_km": 46.7
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.45,
+  "mean_pet_mm_per_day": 1.35,
+  "aridity_pet_over_p": 0.55,
+  "fraction_of_precipitation_as_snow": 0.011,
+  "high_precipitation_days_per_year": 20.81
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 9.59,
+  "evergreen_woodland": 0.07,
+  "grass_and_pasture": 64.24,
+  "shrub": 0.0,
+  "crops": 21.83,
+  "urban": 4.37
+ },
+ "soils": {
+  "sand_percent": 38.41,
+  "silt_percent": 31.48,
+  "clay_percent": 30.1,
+  "organic_percent": 0.61,
+  "total_available_water_capacity_mm": 96.83,
+  "root_depth_m": 1.24,
+  "depth_to_bedrock_m": 5.76
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 10.69,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 12.71,
+  "moderately_productive_intergranular_aquifer": 19.17,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 57.43
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

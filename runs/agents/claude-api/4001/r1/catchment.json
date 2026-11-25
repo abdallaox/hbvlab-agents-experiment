@@ -1,0 +1,53 @@
+{
+ "gauge_id": 4001,
+ "gauge_name": "Conon at Moy Bridge",
+ "location": {
+  "latitude": 57.56,
+  "longitude": -4.54
+ },
+ "topography": {
+  "area_km2": 962.45,
+  "mean_elevation_m": 377.0,
+  "gauge_elevation_m": 10.0,
+  "max_elevation_m": 1103.4,
+  "mean_slope_m_per_km": 198.8
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 4.92,
+  "mean_pet_mm_per_day": 1.05,
+  "aridity_pet_over_p": 0.21,
+  "fraction_of_precipitation_as_snow": 0.04,
+  "high_precipitation_days_per_year": 10.05
+ },
+ "land_cover_percent": {
+  "dominant": "Shrubs",
+  "deciduous_woodland": 2.6,
+  "evergreen_woodland": 10.58,
+  "grass_and_pasture": 14.21,
+  "shrub": 65.63,
+  "crops": 0.35,
+  "urban": 0.04
+ },
+ "soils": {
+  "sand_percent": 45.11,
+  "silt_percent": 27.11,
+  "clay_percent": 27.79,
+  "organic_percent": 15.85,
+  "total_available_water_capacity_mm": 140.27,
+  "root_depth_m": 1.0,
+  "depth_to_bedrock_m": 0.97
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.2,
+  "low_productivity_fractured_aquifer": 21.74,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 8.16,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 69.79
+ },
+ "reservoirs": {
+  "number": 7,
+  "total_capacity_megalitres": 524270.0
+ }
+}

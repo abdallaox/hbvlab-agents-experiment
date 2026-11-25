@@ -1,0 +1,53 @@
+{
+ "gauge_id": 66011,
+ "gauge_name": "Conwy at Cwmlanerch",
+ "location": {
+  "latitude": 53.11,
+  "longitude": -3.79
+ },
+ "topography": {
+  "area_km2": 340.11,
+  "mean_elevation_m": 342.0,
+  "gauge_elevation_m": 11.6,
+  "max_elevation_m": 1050.6,
+  "mean_slope_m_per_km": 169.7
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 5.63,
+  "mean_pet_mm_per_day": 1.29,
+  "aridity_pet_over_p": 0.23,
+  "fraction_of_precipitation_as_snow": 0.015,
+  "high_precipitation_days_per_year": 12.77
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 5.26,
+  "evergreen_woodland": 15.04,
+  "grass_and_pasture": 58.0,
+  "shrub": 20.56,
+  "crops": 0.01,
+  "urban": 0.25
+ },
+ "soils": {
+  "sand_percent": 44.07,
+  "silt_percent": 36.98,
+  "clay_percent": 18.95,
+  "organic_percent": 5.97,
+  "total_available_water_capacity_mm": 88.8,
+  "root_depth_m": 0.72,
+  "depth_to_bedrock_m": 0.97
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 31.57,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 7.68,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 60.75
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 1776.0
+ }
+}

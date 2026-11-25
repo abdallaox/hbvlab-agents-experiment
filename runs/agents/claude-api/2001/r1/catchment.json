@@ -1,0 +1,53 @@
+{
+ "gauge_id": 2001,
+ "gauge_name": "Helmsdale at Kilphedir",
+ "location": {
+  "latitude": 58.14,
+  "longitude": -3.7
+ },
+ "topography": {
+  "area_km2": 553.24,
+  "mean_elevation_m": 213.0,
+  "gauge_elevation_m": 17.0,
+  "max_elevation_m": 691.6,
+  "mean_slope_m_per_km": 97.0
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.03,
+  "mean_pet_mm_per_day": 1.08,
+  "aridity_pet_over_p": 0.36,
+  "fraction_of_precipitation_as_snow": 0.042,
+  "high_precipitation_days_per_year": 9.98
+ },
+ "land_cover_percent": {
+  "dominant": "Shrubs",
+  "deciduous_woodland": 0.15,
+  "evergreen_woodland": 5.91,
+  "grass_and_pasture": 3.15,
+  "shrub": 87.65,
+  "crops": 0.0,
+  "urban": 0.0
+ },
+ "soils": {
+  "sand_percent": 41.66,
+  "silt_percent": 25.28,
+  "clay_percent": 33.06,
+  "organic_percent": 19.85,
+  "total_available_water_capacity_mm": 167.76,
+  "root_depth_m": 1.18,
+  "depth_to_bedrock_m": 2.56
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 1.01,
+  "low_productivity_fractured_aquifer": 3.26,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 9.86,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 85.86
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 34000.0
+ }
+}

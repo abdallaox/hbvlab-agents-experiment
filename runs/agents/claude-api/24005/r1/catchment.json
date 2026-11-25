@@ -1,0 +1,53 @@
+{
+ "gauge_id": 24005,
+ "gauge_name": "Browney at Burnhall",
+ "location": {
+  "latitude": 54.74,
+  "longitude": -1.6
+ },
+ "topography": {
+  "area_km2": 179.0,
+  "mean_elevation_m": 197.0,
+  "gauge_elevation_m": 43.9,
+  "max_elevation_m": 377.9,
+  "mean_slope_m_per_km": 77.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.94,
+  "mean_pet_mm_per_day": 1.32,
+  "aridity_pet_over_p": 0.68,
+  "fraction_of_precipitation_as_snow": 0.038,
+  "high_precipitation_days_per_year": 16.81
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 8.67,
+  "evergreen_woodland": 4.68,
+  "grass_and_pasture": 59.85,
+  "shrub": 2.39,
+  "crops": 16.82,
+  "urban": 7.58
+ },
+ "soils": {
+  "sand_percent": 38.94,
+  "silt_percent": 36.54,
+  "clay_percent": 24.52,
+  "organic_percent": 0.63,
+  "total_available_water_capacity_mm": 99.62,
+  "root_depth_m": 1.19,
+  "depth_to_bedrock_m": 1.46
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 33.29,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 10.28,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 56.44
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

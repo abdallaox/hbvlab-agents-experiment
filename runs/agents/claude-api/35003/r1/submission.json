@@ -1,0 +1,100 @@
+{
+ "model_id": "model-7",
+ "diagnosis": "Daily NSE for 1971\u20131997 is 0.807 (KGE 0.68, r 0.90). The Alde is a lowland clay catchment with a small baseflow and a low runoff ratio (about 0.23). Every NSE-optimal calibration with a working groundwater store either overestimated runoff volume by 21\u201330% or used a very small K2. A very small K2 turns the lower store into a slowly filling sink, so results depend on the starting state and drift over time. To avoid that, the final model treats the lower store as a fixed deep loss: K2 is held at about 0, so PERC (0.57 mm/day) is water lost from the catchment, and flow comes from the upper store (K0 0.88, K1 0.14, UZL 4.7, MAXBAS 3.8). Because no store builds up over time, this model's results do not depend on its initial lower-store level. The soil store is large and rarely drains (FC 266, LP 0.99, BETA 5.6). The model underestimates total runoff volume by about 24% (mostly baseflow and low flows in long recessions), because NSE puts most weight on the peaks. It probably simulates dry summers and long recessions poorly. Snow parameters hardly matter (about 2% of precipitation falls as snow) and are poorly identified. I am fairly confident in the parameters that control peaks and less confident in those that set the water balance. I would expect NSE in an independent period of about 0.75\u20130.80.",
+ "parameters": {
+  "K0": 0.8810745481562038,
+  "K1": 0.13671323105555774,
+  "K2": 1.989048640456992e-06,
+  "UZL": 4.67877121553567,
+  "PERC": 0.5699677752847874,
+  "MAXBAS": 3.761185884568223,
+  "TT": 0.09554159357131432,
+  "CFMAX": 9.970876478470268,
+  "SFCF": 0.8107080314070497,
+  "CFR": 0.0007409009845115252,
+  "CWH": 0.294016098585037,
+  "FC": 265.9422967701841,
+  "LP": 0.9900116393167776,
+  "BETA": 5.5977670985125885
+ },
+ "ranges": {
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   2e-06
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   6.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.8,
+   1.2
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   30.0,
+   800.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   10.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 200.0,
+  "upper_storage": 10.0,
+  "lower_storage": 0.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8072,
+  "KGE": 0.6766,
+  "PBIAS": -24.4164,
+  "RMSE": 0.3989,
+  "MAE": 0.1741,
+  "r": 0.9037
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9509
+}

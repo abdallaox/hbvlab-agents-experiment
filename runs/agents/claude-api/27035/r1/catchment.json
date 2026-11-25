@@ -1,0 +1,53 @@
+{
+ "gauge_id": 27035,
+ "gauge_name": "Aire at Kildwick Bridge",
+ "location": {
+  "latitude": 53.91,
+  "longitude": -1.98
+ },
+ "topography": {
+  "area_km2": 283.39,
+  "mean_elevation_m": 230.0,
+  "gauge_elevation_m": 87.3,
+  "max_elevation_m": 586.0,
+  "mean_slope_m_per_km": 99.6
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.08,
+  "mean_pet_mm_per_day": 1.31,
+  "aridity_pet_over_p": 0.42,
+  "fraction_of_precipitation_as_snow": 0.02,
+  "high_precipitation_days_per_year": 13.43
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 2.81,
+  "evergreen_woodland": 1.65,
+  "grass_and_pasture": 77.15,
+  "shrub": 13.61,
+  "crops": 0.75,
+  "urban": 3.31
+ },
+ "soils": {
+  "sand_percent": 40.21,
+  "silt_percent": 35.78,
+  "clay_percent": 24.01,
+  "organic_percent": 1.79,
+  "total_available_water_capacity_mm": 102.58,
+  "root_depth_m": 1.18,
+  "depth_to_bedrock_m": 2.42
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 18.95,
+  "low_productivity_fractured_aquifer": 0.11,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 18.55,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 62.38
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

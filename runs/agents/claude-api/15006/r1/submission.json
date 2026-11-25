@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "I calibrated the model to daily NSE over all of 1971-10 to 1997-12 using DDS: 3000 runs, then two refinement rounds of 1500 runs each. Before the last round I set the starting soil and groundwater stores (soil moisture 170 mm, lower store 40 mm, upper store 2 mm) close to their usual levels. The fit is good: NSE 0.875, KGE 0.925, a small overestimate of volume (PBIAS -2.5%) and r 0.936. As a check, I reran the same parameters on 1986-1997 alone, which gave NSE 0.887. This is not an independent test, because those years were also used in calibration, but it suggests the fit is stable over time. The parameters look reasonable for a wet, steep Scottish upland catchment: FC about 186 mm, LP about 1.0 (at the top of its range), a fairly linear soil response (BETA 1.3), fast upper-zone runoff (K1 0.19, K0 0.87, UZL 66 mm), high percolation (PERC 6.9) into a moderately responsive groundwater store (K2 0.064), and a short routing delay (MAXBAS 2.9 days). Snow plays a small role: TT about 0.9 \u00b0C, CFMAX 4.4 and snowfall correction 0.81. CFR and CWH end up near zero and have little effect. Weak spots: the highest peaks are underestimated (simulated maximum about 28 vs 37 mm/d observed). Regulation by the catchment's 16 reservoirs and hydropower schemes, and errors in snowmelt timing, are not represented. Several parameters, especially the snow parameters and the K0/UZL/PERC trade-offs, are likely interchangeable without changing the fit much. My confidence in the overall simulated flows is moderate to high; my confidence in individual parameter values is lower.",
+ "parameters": {
+  "FC": 185.54054117150685,
+  "LP": 0.9954448329748408,
+  "BETA": 1.2893664915143328,
+  "K0": 0.8698378352305,
+  "K1": 0.19466230665912437,
+  "K2": 0.06423532054894109,
+  "UZL": 66.48563719895412,
+  "PERC": 6.858517906069817,
+  "MAXBAS": 2.918300763549905,
+  "TT": 0.9159751804064656,
+  "CFMAX": 4.382698402074131,
+  "SFCF": 0.8087862913951538,
+  "CFR": 0.0016417756945513694,
+  "CWH": 0.0012060489385564343
+ },
+ "ranges": {
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 170.0,
+  "upper_storage": 2.0,
+  "lower_storage": 40.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8746,
+  "KGE": 0.9253,
+  "PBIAS": -2.5339,
+  "RMSE": 0.94,
+  "MAE": 0.5793,
+  "r": 0.9358
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 6005
+}

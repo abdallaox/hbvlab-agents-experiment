@@ -1,0 +1,53 @@
+{
+ "gauge_id": 19001,
+ "gauge_name": "Almond at Craigiehall",
+ "location": {
+  "latitude": 55.96,
+  "longitude": -3.34
+ },
+ "topography": {
+  "area_km2": 379.51,
+  "mean_elevation_m": 177.0,
+  "gauge_elevation_m": 22.8,
+  "max_elevation_m": 514.2,
+  "mean_slope_m_per_km": 45.6
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.49,
+  "mean_pet_mm_per_day": 1.25,
+  "aridity_pet_over_p": 0.5,
+  "fraction_of_precipitation_as_snow": 0.026,
+  "high_precipitation_days_per_year": 13.58
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 9.53,
+  "evergreen_woodland": 12.0,
+  "grass_and_pasture": 28.4,
+  "shrub": 11.89,
+  "crops": 21.24,
+  "urban": 15.83
+ },
+ "soils": {
+  "sand_percent": 42.04,
+  "silt_percent": 29.25,
+  "clay_percent": 28.71,
+  "organic_percent": 10.3,
+  "total_available_water_capacity_mm": 135.6,
+  "root_depth_m": 1.27,
+  "depth_to_bedrock_m": 7.92
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.56,
+  "low_productivity_fractured_aquifer": 0.35,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 24.1,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 75.0
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 3802.0
+ }
+}

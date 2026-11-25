@@ -1,0 +1,53 @@
+{
+ "gauge_id": 15006,
+ "gauge_name": "Tay at Ballathie",
+ "location": {
+  "latitude": 56.51,
+  "longitude": -3.39
+ },
+ "topography": {
+  "area_km2": 4586.79,
+  "mean_elevation_m": 411.0,
+  "gauge_elevation_m": 26.2,
+  "max_elevation_m": 1210.0,
+  "mean_slope_m_per_km": 166.7
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 4.04,
+  "mean_pet_mm_per_day": 1.12,
+  "aridity_pet_over_p": 0.28,
+  "fraction_of_precipitation_as_snow": 0.058,
+  "high_precipitation_days_per_year": 11.08
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 4.29,
+  "evergreen_woodland": 11.82,
+  "grass_and_pasture": 35.91,
+  "shrub": 31.28,
+  "crops": 7.64,
+  "urban": 0.55
+ },
+ "soils": {
+  "sand_percent": 59.63,
+  "silt_percent": 24.11,
+  "clay_percent": 16.27,
+  "organic_percent": 6.84,
+  "total_available_water_capacity_mm": 85.5,
+  "root_depth_m": 0.76,
+  "depth_to_bedrock_m": 2.38
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.49,
+  "low_productivity_fractured_aquifer": 27.8,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 13.01,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 58.7
+ },
+ "reservoirs": {
+  "number": 16,
+  "total_capacity_megalitres": 571555.0
+ }
+}

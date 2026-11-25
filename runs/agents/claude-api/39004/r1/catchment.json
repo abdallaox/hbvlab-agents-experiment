@@ -1,0 +1,53 @@
+{
+ "gauge_id": 39004,
+ "gauge_name": "Wandle at Beddington Park",
+ "location": {
+  "latitude": 51.37,
+  "longitude": -0.14
+ },
+ "topography": {
+  "area_km2": 117.35,
+  "mean_elevation_m": 145.0,
+  "gauge_elevation_m": 33.1,
+  "max_elevation_m": 268.4,
+  "mean_slope_m_per_km": 75.4
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.08,
+  "mean_pet_mm_per_day": 1.38,
+  "aridity_pet_over_p": 0.66,
+  "fraction_of_precipitation_as_snow": 0.016,
+  "high_precipitation_days_per_year": 19.67
+ },
+ "land_cover_percent": {
+  "dominant": "Urban",
+  "deciduous_woodland": 17.44,
+  "evergreen_woodland": 0.22,
+  "grass_and_pasture": 32.08,
+  "shrub": 0.01,
+  "crops": 7.77,
+  "urban": 42.51
+ },
+ "soils": {
+  "sand_percent": 43.26,
+  "silt_percent": 28.65,
+  "clay_percent": 28.09,
+  "organic_percent": 0.54,
+  "total_available_water_capacity_mm": 100.22,
+  "root_depth_m": 1.29,
+  "depth_to_bedrock_m": 1.01
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 43.39,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 7.63,
+  "low_productivity_intergranular_aquifer": 1.35,
+  "rocks_with_essentially_no_groundwater": 47.63
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

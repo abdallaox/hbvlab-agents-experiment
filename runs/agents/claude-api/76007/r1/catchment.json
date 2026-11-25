@@ -1,0 +1,53 @@
+{
+ "gauge_id": 76007,
+ "gauge_name": "Eden at Sheepmount",
+ "location": {
+  "latitude": 54.9,
+  "longitude": -2.95
+ },
+ "topography": {
+  "area_km2": 2276.0,
+  "mean_elevation_m": 248.0,
+  "gauge_elevation_m": 9.9,
+  "max_elevation_m": 945.4,
+  "mean_slope_m_per_km": 103.3
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.19,
+  "mean_pet_mm_per_day": 1.26,
+  "aridity_pet_over_p": 0.39,
+  "fraction_of_precipitation_as_snow": 0.022,
+  "high_precipitation_days_per_year": 12.73
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 4.34,
+  "evergreen_woodland": 5.86,
+  "grass_and_pasture": 71.78,
+  "shrub": 8.34,
+  "crops": 5.9,
+  "urban": 2.54
+ },
+ "soils": {
+  "sand_percent": 48.15,
+  "silt_percent": 29.66,
+  "clay_percent": 22.19,
+  "organic_percent": 4.0,
+  "total_available_water_capacity_mm": 101.09,
+  "root_depth_m": 1.1,
+  "depth_to_bedrock_m": 5.39
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 7.34,
+  "low_productivity_fractured_aquifer": 4.89,
+  "highly_productive_intergranular_aquifer": 0.83,
+  "moderately_productive_intergranular_aquifer": 21.82,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 64.99
+ },
+ "reservoirs": {
+  "number": 2,
+  "total_capacity_megalitres": 87122.0
+ }
+}

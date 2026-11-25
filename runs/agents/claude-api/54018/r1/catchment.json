@@ -1,0 +1,53 @@
+{
+ "gauge_id": 54018,
+ "gauge_name": "Rea Brook at Hookagate",
+ "location": {
+  "latitude": 52.68,
+  "longitude": -2.79
+ },
+ "topography": {
+  "area_km2": 172.85,
+  "mean_elevation_m": 183.0,
+  "gauge_elevation_m": 64.6,
+  "max_elevation_m": 515.2,
+  "mean_slope_m_per_km": 89.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.06,
+  "mean_pet_mm_per_day": 1.35,
+  "aridity_pet_over_p": 0.66,
+  "fraction_of_precipitation_as_snow": 0.02,
+  "high_precipitation_days_per_year": 16.73
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 6.29,
+  "evergreen_woodland": 2.47,
+  "grass_and_pasture": 61.74,
+  "shrub": 2.0,
+  "crops": 24.65,
+  "urban": 2.54
+ },
+ "soils": {
+  "sand_percent": 43.14,
+  "silt_percent": 33.85,
+  "clay_percent": 23.0,
+  "organic_percent": 0.75,
+  "total_available_water_capacity_mm": 87.79,
+  "root_depth_m": 1.06,
+  "depth_to_bedrock_m": 7.91
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.04,
+  "low_productivity_fractured_aquifer": 28.77,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 20.96,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 46.49
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

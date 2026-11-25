@@ -1,0 +1,53 @@
+{
+ "gauge_id": 18001,
+ "gauge_name": "Allan Water at Kinbuck",
+ "location": {
+  "latitude": 56.23,
+  "longitude": -3.95
+ },
+ "topography": {
+  "area_km2": 160.29,
+  "mean_elevation_m": 245.0,
+  "gauge_elevation_m": 93.0,
+  "max_elevation_m": 630.1,
+  "mean_slope_m_per_km": 92.8
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.97,
+  "mean_pet_mm_per_day": 1.2,
+  "aridity_pet_over_p": 0.3,
+  "fraction_of_precipitation_as_snow": 0.033,
+  "high_precipitation_days_per_year": 13.39
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 2.8,
+  "evergreen_woodland": 10.63,
+  "grass_and_pasture": 57.86,
+  "shrub": 21.77,
+  "crops": 5.82,
+  "urban": 0.81
+ },
+ "soils": {
+  "sand_percent": 48.14,
+  "silt_percent": 30.05,
+  "clay_percent": 21.81,
+  "organic_percent": 5.94,
+  "total_available_water_capacity_mm": 104.47,
+  "root_depth_m": 1.06,
+  "depth_to_bedrock_m": 1.48
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 5.42,
+  "low_productivity_fractured_aquifer": 4.29,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 31.45,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 58.84
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

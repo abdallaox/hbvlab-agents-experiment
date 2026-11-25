@@ -1,0 +1,53 @@
+{
+ "gauge_id": 43021,
+ "gauge_name": "Avon at Knapp Mill",
+ "location": {
+  "latitude": 50.75,
+  "longitude": -1.78
+ },
+ "topography": {
+  "area_km2": 1712.31,
+  "mean_elevation_m": 120.0,
+  "gauge_elevation_m": 0.9,
+  "max_elevation_m": 293.7,
+  "mean_slope_m_per_km": 61.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.24,
+  "mean_pet_mm_per_day": 1.41,
+  "aridity_pet_over_p": 0.63,
+  "fraction_of_precipitation_as_snow": 0.012,
+  "high_precipitation_days_per_year": 19.01
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 6.94,
+  "evergreen_woodland": 2.43,
+  "grass_and_pasture": 41.53,
+  "shrub": 2.81,
+  "crops": 42.0,
+  "urban": 3.86
+ },
+ "soils": {
+  "sand_percent": 39.83,
+  "silt_percent": 36.41,
+  "clay_percent": 23.76,
+  "organic_percent": 1.11,
+  "total_available_water_capacity_mm": 74.39,
+  "root_depth_m": 0.81,
+  "depth_to_bedrock_m": 2.45
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 62.34,
+  "moderately_productive_fractured_aquifer": 1.24,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 29.72,
+  "low_productivity_intergranular_aquifer": 0.81,
+  "rocks_with_essentially_no_groundwater": 5.89
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

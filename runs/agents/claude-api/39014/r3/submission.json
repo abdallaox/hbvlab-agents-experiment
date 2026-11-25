@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "Ver at Hansteads is a groundwater-fed chalk stream. Observed runoff is only about 0.23 mm/d (12% of rainfall), which is below P minus PET. That points to water leaving the catchment underground and/or being abstracted, and standard HBV cannot remove that much water. My workaround is to treat PERC (~0.41 mm/d) as a groundwater loss: K2 is fixed at 1e-6, so the lower store keeps filling and returns almost nothing. All streamflow comes from a slow upper store (K1 ~0.005/d, a ~200-day time constant) plus a gentle extra outflow above UZL ~100 mm (K0 ~0.015). The soil store is large (FC ~900 mm, LP 0.36, BETA 1.2), consistent with deep chalk storage. Capping FC at 400 dropped NSE to 0.67. Calibration fit (1971\u20131997, DDS on NSE): NSE 0.73, KGE 0.85, bias -2%. Main weaknesses: the year-to-year groundwater memory is only partly captured, so recessions during drought years (1976, 1990\u201392, 1996\u201397) and the size of winter peaks are imperfect. Snow parameters hardly matter and are poorly constrained, and several parameters trade off against each other. Results depend on starting stores: soil moisture 350 mm and upper store 25 mm work well, but starting from very dry soil would make the first year too low. A variant that adds a constant baseflow scored slightly higher (NSE 0.75). I rejected it because it only works if a special starting value for the lower store is kept. I expect validation NSE of roughly 0.6\u20130.75.",
+ "parameters": {
+  "K0": 0.014669124209098073,
+  "K1": 0.004933980135546377,
+  "K2": 1.0099749077512558e-06,
+  "UZL": 102.5222414748302,
+  "PERC": 0.41474179251234267,
+  "MAXBAS": 1.3096587037208884,
+  "TT": -1.6877909651691374,
+  "CFMAX": 9.84488342977295,
+  "SFCF": 1.299259878049525,
+  "CFR": 0.006627176219715036,
+  "CWH": 0.00039535239020564543,
+  "FC": 897.718062752124,
+  "LP": 0.35599127363152366,
+  "BETA": 1.2081752148229783
+ },
+ "ranges": {
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   1.01e-06
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   5.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "TT": [
+   -2.5,
+   1.5
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.7,
+   1.3
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 350.0,
+  "upper_storage": 25.0,
+  "lower_storage": 0.0
+ },
+ "metrics_reported": {
+  "NSE": 0.7332,
+  "KGE": 0.8521,
+  "PBIAS": -2.3815,
+  "RMSE": 0.0835,
+  "MAE": 0.0635,
+  "r": 0.8602
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9814
+}

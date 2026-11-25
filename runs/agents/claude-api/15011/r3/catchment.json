@@ -1,0 +1,53 @@
+{
+ "gauge_id": 15011,
+ "gauge_name": "Lyon at Comrie Bridge",
+ "location": {
+  "latitude": 56.61,
+  "longitude": -3.98
+ },
+ "topography": {
+  "area_km2": 388.33,
+  "mean_elevation_m": 552.0,
+  "gauge_elevation_m": 92.1,
+  "max_elevation_m": 1210.0,
+  "mean_slope_m_per_km": 272.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 5.73,
+  "mean_pet_mm_per_day": 1.08,
+  "aridity_pet_over_p": 0.19,
+  "fraction_of_precipitation_as_snow": 0.078,
+  "high_precipitation_days_per_year": 12.95
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 2.09,
+  "evergreen_woodland": 5.18,
+  "grass_and_pasture": 58.79,
+  "shrub": 20.98,
+  "crops": 0.08,
+  "urban": 0.04
+ },
+ "soils": {
+  "sand_percent": 56.53,
+  "silt_percent": 24.45,
+  "clay_percent": 19.02,
+  "organic_percent": 10.96,
+  "total_available_water_capacity_mm": 101.49,
+  "root_depth_m": 0.74,
+  "depth_to_bedrock_m": 1.01
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 41.28,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 6.03,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 52.69
+ },
+ "reservoirs": {
+  "number": 2,
+  "total_capacity_megalitres": 126040.0
+ }
+}

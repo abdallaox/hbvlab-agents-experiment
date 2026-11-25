@@ -1,0 +1,53 @@
+{
+ "gauge_id": 54012,
+ "gauge_name": "Tern at Walcot",
+ "location": {
+  "latitude": 52.71,
+  "longitude": -2.61
+ },
+ "topography": {
+  "area_km2": 851.65,
+  "mean_elevation_m": 93.0,
+  "gauge_elevation_m": 44.6,
+  "max_elevation_m": 392.4,
+  "mean_slope_m_per_km": 28.2
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.87,
+  "mean_pet_mm_per_day": 1.38,
+  "aridity_pet_over_p": 0.74,
+  "fraction_of_precipitation_as_snow": 0.015,
+  "high_precipitation_days_per_year": 16.51
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 6.03,
+  "evergreen_woodland": 1.0,
+  "grass_and_pasture": 38.61,
+  "shrub": 0.53,
+  "crops": 46.74,
+  "urban": 6.76
+ },
+ "soils": {
+  "sand_percent": 64.18,
+  "silt_percent": 18.0,
+  "clay_percent": 17.82,
+  "organic_percent": 0.94,
+  "total_available_water_capacity_mm": 86.26,
+  "root_depth_m": 1.29,
+  "depth_to_bedrock_m": 27.14
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 5.74,
+  "low_productivity_fractured_aquifer": 5.86,
+  "highly_productive_intergranular_aquifer": 13.98,
+  "moderately_productive_intergranular_aquifer": 37.44,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 34.61
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

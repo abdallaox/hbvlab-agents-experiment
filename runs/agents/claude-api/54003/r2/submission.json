@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "Vyrnwy at Vyrnwy Reservoir is a regulated gauge. The observed flow is the reservoir's outflow (compensation flow plus spills). Only about 40% of precipitation turns up as flow, so roughly half is lost to the Liverpool water-supply abstraction. The standard HBV setup overestimated flow volume by 88% (NSE -0.7). I made the lower groundwater store act as the abstraction sink by fixing K2 at about 1e-6. Water percolating into it at PERC \u2248 2.1 mm/d is effectively removed, which roughly matches the known abstraction rate of about 2.8 mm/d. A very large soil store (FC \u2248 1200 mm) and a slow upper store (K1 \u2248 0.023, UZL \u2248 160) stand in for the reservoir's buffering. Initial stores are set near their long-term levels. Over the full period (1971\u20131997, DDS on NSE) NSE is 0.62, KGE 0.74 and volume bias is \u22124%. Re-running with the same parameters on 1989\u20131997 gave NSE 0.66, so performance looks stable over time. Weak points: the model cannot reproduce the reservoir's on/off behaviour, with a near-constant compensation flow in summer and sudden spills once it refills in autumn. Peaks are underestimated, and summer lows and refill timing are poor. Confidence is moderate for flow volume and the abstraction-sink setup. It is low for the meaning of individual parameters, because they represent reservoir operation rather than natural processes. If abstraction or operating rules changed after 1997, performance would get worse.",
+ "parameters": {
+  "K0": 0.5077104166423084,
+  "K1": 0.023005914956639204,
+  "K2": 1.998843239832119e-06,
+  "UZL": 162.0949333231139,
+  "PERC": 2.1051934683878093,
+  "MAXBAS": 2.7270032257501255,
+  "TT": 1.5810455376477235,
+  "CFMAX": 8.553934336532878,
+  "SFCF": 1.0392669446651708,
+  "CFR": 0.28023492828720264,
+  "CWH": 0.0004589258189284231,
+  "FC": 1198.139549208986,
+  "LP": 0.7371120849130928,
+  "BETA": 2.783269010295662
+ },
+ "ranges": {
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   2e-06
+  ],
+  "UZL": [
+   0.0,
+   1500.0
+  ],
+  "PERC": [
+   0.0,
+   8.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 1070.0,
+  "upper_storage": 70.0,
+  "lower_storage": 0.0
+ },
+ "metrics_reported": {
+  "NSE": 0.6173,
+  "KGE": 0.7442,
+  "PBIAS": -4.0345,
+  "RMSE": 2.2552,
+  "MAE": 1.377,
+  "r": 0.7872
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 8509
+}

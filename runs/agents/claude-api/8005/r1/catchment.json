@@ -1,0 +1,53 @@
+{
+ "gauge_id": 8005,
+ "gauge_name": "Spey at Boat of Garten",
+ "location": {
+  "latitude": 57.25,
+  "longitude": -3.75
+ },
+ "topography": {
+  "area_km2": 1261.3,
+  "mean_elevation_m": 522.0,
+  "gauge_elevation_m": 197.3,
+  "max_elevation_m": 1291.9,
+  "mean_slope_m_per_km": 174.2
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.6,
+  "mean_pet_mm_per_day": 1.05,
+  "aridity_pet_over_p": 0.29,
+  "fraction_of_precipitation_as_snow": 0.09,
+  "high_precipitation_days_per_year": 12.22
+ },
+ "land_cover_percent": {
+  "dominant": "Shrubs",
+  "deciduous_woodland": 2.98,
+  "evergreen_woodland": 12.22,
+  "grass_and_pasture": 17.18,
+  "shrub": 53.04,
+  "crops": 0.06,
+  "urban": 0.36
+ },
+ "soils": {
+  "sand_percent": 59.75,
+  "silt_percent": 20.17,
+  "clay_percent": 20.08,
+  "organic_percent": 10.95,
+  "total_available_water_capacity_mm": 102.68,
+  "root_depth_m": 0.81,
+  "depth_to_bedrock_m": 1.63
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 21.57,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 17.76,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 60.67
+ },
+ "reservoirs": {
+  "number": 3,
+  "total_capacity_megalitres": 11280.0
+ }
+}

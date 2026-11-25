@@ -1,0 +1,53 @@
+{
+ "gauge_id": 41003,
+ "gauge_name": "Cuckmere at Sherman Bridge",
+ "location": {
+  "latitude": 50.83,
+  "longitude": 0.18
+ },
+ "topography": {
+  "area_km2": 130.33,
+  "mean_elevation_m": 52.0,
+  "gauge_elevation_m": 3.7,
+  "max_elevation_m": 212.8,
+  "mean_slope_m_per_km": 50.2
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.24,
+  "mean_pet_mm_per_day": 1.36,
+  "aridity_pet_over_p": 0.61,
+  "fraction_of_precipitation_as_snow": 0.012,
+  "high_precipitation_days_per_year": 20.73
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 15.54,
+  "evergreen_woodland": 1.5,
+  "grass_and_pasture": 60.17,
+  "shrub": 0.0,
+  "crops": 16.42,
+  "urban": 6.07
+ },
+ "soils": {
+  "sand_percent": 35.59,
+  "silt_percent": 32.27,
+  "clay_percent": 32.14,
+  "organic_percent": 0.56,
+  "total_available_water_capacity_mm": 95.62,
+  "root_depth_m": 1.22,
+  "depth_to_bedrock_m": 11.88
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 1.42,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 3.76,
+  "moderately_productive_intergranular_aquifer": 53.47,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 41.35
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 3546.0
+ }
+}

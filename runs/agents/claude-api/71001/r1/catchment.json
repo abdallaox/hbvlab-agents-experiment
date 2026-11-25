@@ -1,0 +1,53 @@
+{
+ "gauge_id": 71001,
+ "gauge_name": "Ribble at Samlesbury",
+ "location": {
+  "latitude": 53.77,
+  "longitude": -2.62
+ },
+ "topography": {
+  "area_km2": 1144.7,
+  "mean_elevation_m": 220.0,
+  "gauge_elevation_m": 9.5,
+  "max_elevation_m": 691.4,
+  "mean_slope_m_per_km": 94.7
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.62,
+  "mean_pet_mm_per_day": 1.31,
+  "aridity_pet_over_p": 0.36,
+  "fraction_of_precipitation_as_snow": 0.016,
+  "high_precipitation_days_per_year": 12.88
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 4.97,
+  "evergreen_woodland": 2.71,
+  "grass_and_pasture": 68.5,
+  "shrub": 14.57,
+  "crops": 1.2,
+  "urban": 6.85
+ },
+ "soils": {
+  "sand_percent": 41.3,
+  "silt_percent": 35.07,
+  "clay_percent": 23.63,
+  "organic_percent": 2.83,
+  "total_available_water_capacity_mm": 104.96,
+  "root_depth_m": 1.15,
+  "depth_to_bedrock_m": 2.83
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 12.07,
+  "low_productivity_fractured_aquifer": 0.03,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 14.96,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 72.62
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 11800.0
+ }
+}

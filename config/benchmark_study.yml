@@ -1,0 +1,63 @@
+# Shared study configuration. Every model reads periods, basin lists and inputs from here.
+# Data: CAMELS-GB v1 (Coxon et al. 2020), daily 1970-10-01 .. 2015-09-30.
+
+# Test period follows Lees et al. 2021 (HESS 25:5517). Training uses the whole record before it (the first target
+# day is 365 days after the record starts, 1971-10-01). Validation (early stopping only) is 2009-2015, where flow
+# records are 99% complete.
+periods:
+  train:      ["1970-10-01", "1997-12-31"]
+  validation: ["2009-01-01", "2015-09-30"]
+  test:       ["1998-01-01", "2008-12-31"]
+
+basins:
+  all:          config/basins_all.txt
+  train:        config/basins_train.txt          # 536 catchments, used for training and in-sample evaluation
+  spatial_test: config/basins_spatial_test.txt   # 133 catchments, never seen in training by any model
+
+target: discharge_spec   # mm/d
+
+dynamic_inputs:
+  matched: [precipitation, temperature, pet]                       # the inputs of every model in the paper
+  full:    [precipitation, temperature, pet, peti, humidity, shortwave_rad, longwave_rad, windspeed]  # all CAMELS-GB forcing
+
+static_attributes:
+  # The 22 attributes of Lees et al. 2021 (Table 1), a subset of the main set below.
+  lees2021: [area, elev_mean, dpsbar, sand_perc, silt_perc, clay_perc, porosity_hypres,
+             conductivity_hypres, soil_depth_pelletier, frac_snow, dwood_perc, ewood_perc,
+             crop_perc, urban_perc, reservoir_cap, p_mean, pet_mean, p_seasonality,
+             high_prec_freq, low_prec_freq, high_prec_dur, low_prec_dur]
+  # Main set (33): Lees 22 plus aridity, grass, soil water, hydrogeology and reservoir count.
+  # No flow-derived attributes (BFI, runoff ratio, signatures) and no gauge coordinates.
+  extended: [area, elev_mean, dpsbar,
+             p_mean, pet_mean, aridity, p_seasonality, frac_snow,
+             high_prec_freq, high_prec_dur, low_prec_freq, low_prec_dur,
+             dwood_perc, ewood_perc, grass_perc, crop_perc, urban_perc,
+             sand_perc, silt_perc, clay_perc, organic_perc, porosity_hypres, conductivity_hypres,
+             tawc, root_depth, soil_depth_pelletier,
+             frac_high_perc, frac_mod_perc, inter_high_perc, inter_mod_perc, no_gw_perc,
+             num_reservoir, reservoir_cap]
+  # Not used: surfacewater_abs, groundwater_abs (missing for all 229 Scottish and Welsh catchments).
+
+training:                 # LSTM (windowed); also the base for the HBV-based models below
+  seq_length: 365         # days of input per sample (Kratzert 2019 / Lees 2021)
+  predict_last_n: 1       # only the last day carries loss; the 364 before it are the spin-up
+  loss: NSE               # basin-variance-normalised NSE* (Kratzert et al. 2019)
+  optimizer: Adam
+  learning_rate: {0: 1.0e-3, 20: 5.0e-4, 25: 1.0e-4}
+  batch_size: 256
+  epochs: 30
+  clip_gradient_norm: 1.0
+  early_stopping_patience: 5   # on validation-period NSE
+  validate_n_basins: 100       # fixed subset of training basins for early stopping; 0 = all
+  seeds: [0, 1, 2, 3, 4]
+  sample_stride: 1        # every day starts a window
+  normalisation: train_basins_and_train_period_only
+
+training_continuous:      # RPL-HBV and RFL-HBV (--mode continuous): overrides on `training`
+  mode: continuous        # run each basin through the training period in order, stores carried between chunks
+  chunk_days: 365         # truncated backpropagation length; one optimiser step per chunk and basin mini-batch
+  batch_basins: 128       # basins per update
+  epochs: 150
+  learning_rate: {0: 1.0e-3, 100: 5.0e-4, 130: 1.0e-4}
+  early_stopping_patience: 30
+  # same target days, loss, basins, periods, optimiser, clipping and seeds as `training`

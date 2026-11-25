@@ -1,0 +1,53 @@
+{
+ "gauge_id": 35003,
+ "gauge_name": "Alde at Farnham",
+ "location": {
+  "latitude": 52.19,
+  "longitude": 1.45
+ },
+ "topography": {
+  "area_km2": 62.78,
+  "mean_elevation_m": 41.0,
+  "gauge_elevation_m": 5.2,
+  "max_elevation_m": 63.2,
+  "mean_slope_m_per_km": 26.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.58,
+  "mean_pet_mm_per_day": 1.47,
+  "aridity_pet_over_p": 0.93,
+  "fraction_of_precipitation_as_snow": 0.021,
+  "high_precipitation_days_per_year": 18.68
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 5.57,
+  "evergreen_woodland": 0.31,
+  "grass_and_pasture": 14.21,
+  "shrub": 0.0,
+  "crops": 77.95,
+  "urban": 2.0
+ },
+ "soils": {
+  "sand_percent": 45.75,
+  "silt_percent": 30.16,
+  "clay_percent": 24.08,
+  "organic_percent": 0.46,
+  "total_available_water_capacity_mm": 101.75,
+  "root_depth_m": 1.3,
+  "depth_to_bedrock_m": 26.41
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 19.73,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 80.27
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

@@ -1,0 +1,76 @@
+# Agents compared in the experiment, all called through OpenRouter with the same harness (harness/run_agent.py),
+# prompt (harness/prompt.md) and budget. Model choice agreed 24 Nov 2026: the flagship tier of each provider, no
+# "pro" reasoning modes, a dated snapshot where OpenRouter offers one. Prices per million tokens (in / out) on
+# 24 Nov 2026, for cost estimates only: the harness records the cost OpenRouter reports for every call.
+agents:
+  claude:   {model: anthropic/claude-opus-5.5,      price: [4.00, 20.00]}
+  gpt:      {model: openai/gpt-6.2-astra,           price: [8.00, 40.00]}
+  gemini:   {model: google/gemini-4-argon,          price: [2.00, 10.00]}
+  grok:     {model: x-ai/grok-4.7,                  price: [2.00, 6.00]}
+  deepseek: {model: deepseek/deepseek-v4-pro-0813,  price: [0.11, 4.44]}
+
+# Direct Anthropic API route (harness/run_agent_claude.py), used for the showcase runs (API credit, 24 Nov 2026).
+# Prices per million tokens, from Anthropic's model table (Nov 2026), used to compute cost per call.
+claude_api:
+  model: claude-opus-5-5
+  effort: high            # agentic multi-step tool use; Opus 5.5 defaults to medium
+  thinking_display: summarized   # keep a readable summary of the agent's reasoning (billed the same)
+  max_tokens: 16000       # per response
+  price_per_mtok: {input: 4.00, output: 20.00, cache_read: 0.20, cache_write_5m: 5.00}
+
+budget:
+  max_tool_calls: 50        # submit_calibration not counted
+  max_model_runs: 10000     # every HBV simulation, including those inside calibrate and evaluate_uncertainty
+  max_api_turns: 80         # model responses per run, a safety stop
+  max_wall_minutes: 60
+  max_output_tokens: 16000  # per response
+  reminders_without_submit: 1   # times the harness asks an agent that stops without submitting
+
+# Tools the agent sees. Left out: plot_results, save_results, save_model and load_model, which write or read files
+# the text-only agent cannot use, and budget_status, which is for the harness.
+tools:
+  - create_model
+  - list_models
+  - load_data
+  - get_parameters
+  - get_parameter_ranges
+  - set_parameter_ranges
+  - set_parameters
+  - set_initial_conditions
+  - run_model
+  - calibrate
+  - evaluate_uncertainty
+  - clone_model
+  - copy_parameters
+  - get_metrics
+  - compare_models
+  - submit_calibration
+
+# Starting parameter ranges of every model the agent creates (applied by harness/experiment_server.py; HBV_Lab's own
+# defaults are narrower). Generous for every parameter: in the pilot (24 Nov 2026) wide ranges helped catchments that
+# lose water (abstraction, regulation, groundwater export) and did no harm elsewhere. The agent can still change any
+# range with set_parameter_ranges. Starting values stay at HBV_Lab's defaults, which lie inside these ranges.
+ranges:
+  TT:     [-3.0, 3.0]
+  CFMAX:  [0.5, 10.0]
+  SFCF:   [0.4, 1.6]
+  CFR:    [0.0, 0.3]
+  CWH:    [0.0, 0.3]
+  FC:     [10.0, 1500.0]
+  LP:     [0.1, 1.0]
+  BETA:   [0.5, 8.0]
+  K0:     [0.01, 0.99]
+  K1:     [0.001, 0.6]
+  K2:     [0.000001, 0.2]
+  UZL:    [0.0, 150.0]
+  PERC:   [0.0, 15.0]
+  MAXBAS: [1.0, 10.0]
+
+# The "pipeline": what a fixed recipe does without an agent (restored 24 Nov 2026). DDS on NSE with the agent's
+# starting ranges and the agent's run budget, on every catchment. scripts/run_baseline.py, runs/baseline/pipeline.
+baseline:
+  name: pipeline
+  method: DDS
+  ranges: wide          # = `ranges` above
+  iterations: 10000     # = budget.max_model_runs
+  seeds: [0, 1, 2]

@@ -1,0 +1,53 @@
+{
+ "gauge_id": 39049,
+ "gauge_name": "Silk Stream at Colindeep Lane",
+ "location": {
+  "latitude": 51.59,
+  "longitude": -0.24
+ },
+ "topography": {
+  "area_km2": 31.07,
+  "mean_elevation_m": 79.0,
+  "gauge_elevation_m": 39.9,
+  "max_elevation_m": 153.2,
+  "mean_slope_m_per_km": 40.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.84,
+  "mean_pet_mm_per_day": 1.43,
+  "aridity_pet_over_p": 0.78,
+  "fraction_of_precipitation_as_snow": 0.014,
+  "high_precipitation_days_per_year": 18.6
+ },
+ "land_cover_percent": {
+  "dominant": "Urban",
+  "deciduous_woodland": 9.22,
+  "evergreen_woodland": 0.02,
+  "grass_and_pasture": 20.05,
+  "shrub": 0.07,
+  "crops": 3.23,
+  "urban": 67.03
+ },
+ "soils": {
+  "sand_percent": 39.06,
+  "silt_percent": 32.64,
+  "clay_percent": 28.29,
+  "organic_percent": 0.85,
+  "total_available_water_capacity_mm": 83.82,
+  "root_depth_m": 0.98,
+  "depth_to_bedrock_m": 1.15
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 12.4,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 87.6
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

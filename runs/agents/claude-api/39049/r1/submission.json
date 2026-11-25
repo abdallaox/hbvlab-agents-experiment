@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "Silk Stream is a small, mostly urban (67%) London catchment with a flashy response. I calibrated it with DDS on daily NSE over 1971\u20131997, with 1970\u201371 used as warm-up. I also set the starting storages close to their long-run levels (soil 250 mm, lower store 4 mm) so the stores didn't drift at the start of the run. The best fit was NSE 0.764 (KGE 0.72, r 0.88). Simulated flow is about 13% above observed, so the model overestimates total volume, mainly in low flows and recessions. HBV has no separate impervious-surface pathway. Instead, the quick urban runoff comes from a fast upper store (K0 0.29, K1 0.43, UZL 9 mm) and very short routing (MAXBAS about 1.1). The base-flow store (K2 0.11) is small, which fits a catchment with almost no groundwater. The weakest points are probably summer storm peaks from impervious areas after dry spells, where the soil-moisture accounting is too damped, and low-flow bias. A second calibration from a different starting point reached nearly the same NSE (0.761), but with a different split between FC, LP, K1 and K2. That means the soil and response parameters trade off against each other, but the fitted hydrograph is reliable. The snow parameters (TT about \u22122 \u00b0C) are poorly constrained and matter little, since only about 1.4% of precipitation falls as snow. I'm moderately confident and expect an NSE of roughly 0.70\u20130.76 in 1998\u20132008.",
+ "parameters": {
+  "FC": 454.59672036910104,
+  "LP": 0.6866777203476908,
+  "BETA": 1.6169630176994274,
+  "TT": -2.1424772912782277,
+  "CFMAX": 9.918607195466684,
+  "SFCF": 0.7457776078144746,
+  "CFR": 0.2431217263330548,
+  "CWH": 0.2997142511131405,
+  "K0": 0.2850813595349081,
+  "K1": 0.431778415197831,
+  "K2": 0.1121237990951189,
+  "UZL": 8.886540149703974,
+  "PERC": 0.8997209955952584,
+  "MAXBAS": 1.0945319308806756
+ },
+ "ranges": {
+  "FC": [
+   10.0,
+   600.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.3,
+   8.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   5.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 250.0,
+  "upper_storage": 0.5,
+  "lower_storage": 4.0
+ },
+ "metrics_reported": {
+  "NSE": 0.7636,
+  "KGE": 0.7203,
+  "PBIAS": 12.9997,
+  "RMSE": 0.5575,
+  "MAE": 0.2866,
+  "r": 0.8774
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 7005
+}

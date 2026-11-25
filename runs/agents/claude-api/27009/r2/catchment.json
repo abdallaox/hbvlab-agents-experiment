@@ -1,0 +1,53 @@
+{
+ "gauge_id": 27009,
+ "gauge_name": "Ouse at Skelton",
+ "location": {
+  "latitude": 53.99,
+  "longitude": -1.13
+ },
+ "topography": {
+  "area_km2": 3300.8,
+  "mean_elevation_m": 185.0,
+  "gauge_elevation_m": 4.6,
+  "max_elevation_m": 714.3,
+  "mean_slope_m_per_km": 69.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.43,
+  "mean_pet_mm_per_day": 1.33,
+  "aridity_pet_over_p": 0.55,
+  "fraction_of_precipitation_as_snow": 0.026,
+  "high_precipitation_days_per_year": 14.13
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 4.53,
+  "evergreen_woodland": 1.53,
+  "grass_and_pasture": 39.99,
+  "shrub": 18.11,
+  "crops": 32.09,
+  "urban": 3.38
+ },
+ "soils": {
+  "sand_percent": 43.92,
+  "silt_percent": 31.83,
+  "clay_percent": 24.24,
+  "organic_percent": 3.32,
+  "total_available_water_capacity_mm": 108.17,
+  "root_depth_m": 1.21,
+  "depth_to_bedrock_m": 16.67
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.29,
+  "moderately_productive_fractured_aquifer": 15.8,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 20.4,
+  "low_productivity_intergranular_aquifer": 0.5,
+  "rocks_with_essentially_no_groundwater": 51.36
+ },
+ "reservoirs": {
+  "number": 6,
+  "total_capacity_megalitres": 30900.0
+ }
+}

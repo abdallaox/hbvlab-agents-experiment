@@ -1,0 +1,100 @@
+{
+ "model_id": "model-2",
+ "diagnosis": "I calibrated HBV on daily NSE for 1971-10 to 1997-12, after a one-year warm-up, using DDS. The best run gives NSE 0.814, KGE 0.905, r 0.913 and PBIAS +3.8%, so the model slightly over-predicts total flow. I set the starting stores near their long-term means: soil moisture 250 mm and lower storage 12 mm. Two DDS searches that started from quite different parameter sets ended up in the same place: FC about 375 mm, LP 0.64, BETA 2.3, PERC about 1.5 mm/d, K2 about 0.05, K1 0.26-0.31 and MAXBAS about 3.6 days. NSE barely moved between the two searches (0.813 vs 0.814), so I am fairly confident in the soil and baseflow parameters. The snow parameters, K0 and UZL changed a lot between runs without changing the score, which means the data can't pin them down. That matters little here, because snow is only about 1.5% of precipitation. The remaining errors probably come from the size and timing of individual storm peaks and from slow groundwater storage in the sandstone aquifers. I didn't plot hydrographs, so I can't confirm where in the record the model does worst. I didn't do a split-sample test, so there is no direct check on a separate period. Because both searches agreed, I'd expect NSE around 0.75-0.82 in 1998-2008, but that is an estimate, not a test result.",
+ "parameters": {
+  "TT": 1.0415323024010483,
+  "CFMAX": 6.198913950644701,
+  "SFCF": 0.7565925973447704,
+  "CFR": 0.0721038409336195,
+  "CWH": 7.530319635495365e-05,
+  "K0": 0.0924222290904061,
+  "K1": 0.26472795801428806,
+  "K2": 0.0474784081322181,
+  "UZL": 4.417895456419486,
+  "PERC": 1.4959529448129,
+  "MAXBAS": 3.626155826272022,
+  "FC": 377.78135461719035,
+  "LP": 0.6439213246189317,
+  "BETA": 2.304002482755509
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 250.0,
+  "upper_storage": 0.0,
+  "lower_storage": 12.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8144,
+  "KGE": 0.9049,
+  "PBIAS": 3.76,
+  "RMSE": 0.2337,
+  "MAE": 0.1576,
+  "r": 0.9128
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 7005
+}

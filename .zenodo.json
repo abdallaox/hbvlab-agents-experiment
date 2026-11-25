@@ -1,0 +1,27 @@
+{
+  "title": "HBV-Lab agents experiment: code, run records and results",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Mohammed, Abdalla",
+      "affiliation": "University College London"
+    }
+  ],
+  "description": "Code, agent transcripts, submissions and results of the HBV-Lab agents experiment on CAMELS-GB: automatic DDS calibration of HBV-Lab on 669 catchments and an AI agent (Claude Opus 5.5) calibrating HBV through the HBV-Lab MCP server on 95 representative catchments, every run audited.",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "hydrology",
+    "HBV",
+    "calibration",
+    "AI agents",
+    "Model Context Protocol",
+    "CAMELS-GB"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.24514257",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ]
+}

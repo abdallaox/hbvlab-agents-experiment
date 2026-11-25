@@ -1,0 +1,53 @@
+{
+ "gauge_id": 28067,
+ "gauge_name": "Derwent at Church Wilne",
+ "location": {
+  "latitude": 52.88,
+  "longitude": -1.35
+ },
+ "topography": {
+  "area_km2": 1176.63,
+  "mean_elevation_m": 241.0,
+  "gauge_elevation_m": 31.0,
+  "max_elevation_m": 635.5,
+  "mean_slope_m_per_km": 108.9
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.63,
+  "mean_pet_mm_per_day": 1.35,
+  "aridity_pet_over_p": 0.51,
+  "fraction_of_precipitation_as_snow": 0.029,
+  "high_precipitation_days_per_year": 14.79
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 8.04,
+  "evergreen_woodland": 2.18,
+  "grass_and_pasture": 63.4,
+  "shrub": 8.95,
+  "crops": 6.39,
+  "urban": 9.32
+ },
+ "soils": {
+  "sand_percent": 47.54,
+  "silt_percent": 29.67,
+  "clay_percent": 22.79,
+  "organic_percent": 1.58,
+  "total_available_water_capacity_mm": 78.37,
+  "root_depth_m": 0.88,
+  "depth_to_bedrock_m": 1.5
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.05,
+  "moderately_productive_fractured_aquifer": 66.48,
+  "low_productivity_fractured_aquifer": 6.54,
+  "highly_productive_intergranular_aquifer": 1.04,
+  "moderately_productive_intergranular_aquifer": 12.25,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 13.63
+ },
+ "reservoirs": {
+  "number": 4,
+  "total_capacity_megalitres": 52440.0
+ }
+}

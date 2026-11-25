@@ -1,0 +1,100 @@
+{
+ "model_id": "model-2",
+ "diagnosis": "Don at Parkhill, calibrated with DDS on daily NSE over 1971-10 to 1997-12. The first year was used as warm-up, and initial soil storage was set near its long-term mean. Calibration NSE is 0.824, KGE 0.873, PBIAS +1.9% and r 0.91. Two independent DDS searches with different seeds and starting points both converged to NSE of about 0.823. They found similar values for FC (335-377 mm), LP (0.9-0.97), BETA (3-4), K1 (about 0.2), K2 (about 0.06), PERC (about 4), MAXBAS (about 2.5), TT (about 0.27), CFMAX (about 2) and SFCF (about 0.9). Most parameters are therefore well identified. K0 and UZL are poorly identified: the two searches gave K0 of 0.21 vs 0.99 and UZL of 23 vs 42 with almost the same score, so quick-flow peaks are weakly constrained. The snow liquid-water parameters CWH and CFR ended near zero and matter little, since only about 6% of precipitation falls as snow. Likely weaknesses: underestimated flood peaks from convective or high-intensity storms, timing errors in winter snowmelt from the higher Cairngorm headwaters, and low-flow recession in dry summers. The fairly fast baseflow (K2 of about 0.06) fits a catchment with little productive aquifer. No split-sample validation was run. Because the parameters are stable across searches, I expect performance in 1998-2008 to be similar, with NSE of roughly 0.78-0.82.",
+ "parameters": {
+  "K0": 0.21014033107598232,
+  "K1": 0.19742457005773958,
+  "K2": 0.05588109372881356,
+  "UZL": 23.038846522263857,
+  "PERC": 3.985012817001836,
+  "MAXBAS": 2.509818522188374,
+  "TT": 0.2700401281793658,
+  "CFMAX": 1.9854639710408823,
+  "SFCF": 0.8977885744544368,
+  "CFR": 0.002743805699704909,
+  "CWH": 0.00020183754816124894,
+  "FC": 377.43340238041,
+  "LP": 0.9638494249323504,
+  "BETA": 3.806317135590595
+ },
+ "ranges": {
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   10.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 200.0,
+  "upper_storage": 1.0,
+  "lower_storage": 18.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8241,
+  "KGE": 0.8728,
+  "PBIAS": 1.8904,
+  "RMSE": 0.4933,
+  "MAE": 0.2872,
+  "r": 0.9083
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9505
+}

@@ -1,0 +1,53 @@
+{
+ "gauge_id": 47004,
+ "gauge_name": "Lynher at Pillaton Mill",
+ "location": {
+  "latitude": 50.44,
+  "longitude": -4.3
+ },
+ "topography": {
+  "area_km2": 135.29,
+  "mean_elevation_m": 175.0,
+  "gauge_elevation_m": 8.5,
+  "max_elevation_m": 383.0,
+  "mean_slope_m_per_km": 107.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.97,
+  "mean_pet_mm_per_day": 1.42,
+  "aridity_pet_over_p": 0.36,
+  "fraction_of_precipitation_as_snow": 0.003,
+  "high_precipitation_days_per_year": 15.04
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 8.23,
+  "evergreen_woodland": 5.05,
+  "grass_and_pasture": 67.89,
+  "shrub": 0.57,
+  "crops": 15.83,
+  "urban": 2.42
+ },
+ "soils": {
+  "sand_percent": 52.0,
+  "silt_percent": 29.84,
+  "clay_percent": 18.16,
+  "organic_percent": 0.99,
+  "total_available_water_capacity_mm": 65.9,
+  "root_depth_m": 0.76,
+  "depth_to_bedrock_m": 1.03
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 83.49,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 13.17,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 3.34
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

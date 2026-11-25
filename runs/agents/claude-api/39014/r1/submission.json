@@ -1,0 +1,100 @@
+{
+ "model_id": "model-2",
+ "diagnosis": "The calibrated model reaches a daily NSE of 0.76 over 1971\u20131997 (KGE 0.86, PBIAS \u22121%, r 0.88). This is a fit to the calibration period only. I did not run a split-sample validation.\n\nThe Ver is a chalk catchment fed by groundwater. Observed runoff is about 0.22 mm/day, only about 12% of rainfall, and the observed flow is very smooth (maximum 1.06 mm/day). Even if evaporation ran at the full potential rate, standard HBV would leave too much water, so it cannot close this water balance. The first plain calibration had a bias of +58% and an NSE of \u22120.4.\n\nTo fix this, I used the lower groundwater store as a sink. I set its outflow rate K2 to about 2e-6, so it barely drains. The percolation rate (PERC \u2248 0.39 mm/day) then acts as a loss to deep or outside-catchment groundwater. In the final 1400-run search, K2, PERC and the soil parameters (BETA, FC, LP) moved little. The upper store plays the chalk aquifer: it drains very slowly (K1 \u2248 0.0032, a timescale of about 300 days) and only gives quick flow when it holds more than about 72 mm.\n\nThe soil store is large (FC \u2248 1080 mm) with a low LP (0.23), so evaporation stays close to potential. Snow parameters are poorly constrained but hardly matter.\n\nWeaknesses: storm peaks from urban runoff (20% of the area) are poorly captured. Low flows during droughts, such as 1976 and 1990\u201392, depend on the constant loss term. The start-of-run stores are set to the model's end-1997 state (low after the 1996\u201397 drought). I'm moderately confident in the parameters, because the sink structure is a workaround rather than a physical process.",
+ "parameters": {
+  "FC": 1077.3409079581627,
+  "LP": 0.22962449736400967,
+  "BETA": 0.8993940693882836,
+  "K0": 0.005769357775784339,
+  "K1": 0.0032278455992155335,
+  "K2": 1.9998583469387433e-06,
+  "UZL": 72.30054939112019,
+  "PERC": 0.38950323180826374,
+  "MAXBAS": 1.7694752969608976,
+  "TT": -1.6886038081098345,
+  "CFMAX": 6.285283212245966,
+  "SFCF": 1.0702249322582034,
+  "CFR": 0.18305958599267047,
+  "CWH": 0.0013316542497665076
+ },
+ "ranges": {
+  "FC": [
+   50.0,
+   1500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "K0": [
+   0.0005,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.3
+  ],
+  "K2": [
+   1e-06,
+   2e-06
+  ],
+  "UZL": [
+   0.0,
+   300.0
+  ],
+  "PERC": [
+   0.0,
+   5.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 258.0,
+  "upper_storage": 8.2,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.7629,
+  "KGE": 0.8646,
+  "PBIAS": -1.1058,
+  "RMSE": 0.0787,
+  "MAE": 0.0587,
+  "r": 0.8757
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9909
+}

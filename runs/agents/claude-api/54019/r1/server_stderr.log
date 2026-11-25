@@ -1,0 +1,44 @@
+Processing request of type ListToolsRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Time step detected: D
+Warmup period ends at: 1971-09-30 00:00:00
+Loaded data with 9954 time steps, from 1970-10-01 00:00:00 to 1997-12-31 00:00:00
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Initial conditions updated.
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Time step detected: D
+Warmup period ends at: 1971-09-30 00:00:00
+Loaded data with 5206 time steps, from 1970-10-01 00:00:00 to 1984-12-31 00:00:00
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Time step detected: D
+Warmup period ends at: 1985-12-31 00:00:00
+Loaded data with 4748 time steps, from 1985-01-01 00:00:00 to 1997-12-31 00:00:00
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest
+Processing request of type CallToolRequest

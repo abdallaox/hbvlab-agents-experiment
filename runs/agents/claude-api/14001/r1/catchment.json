@@ -1,0 +1,53 @@
+{
+ "gauge_id": 14001,
+ "gauge_name": "Eden at Kemback",
+ "location": {
+  "latitude": 56.33,
+  "longitude": -2.95
+ },
+ "topography": {
+  "area_km2": 308.74,
+  "mean_elevation_m": 109.0,
+  "gauge_elevation_m": 6.2,
+  "max_elevation_m": 520.4,
+  "mean_slope_m_per_km": 72.7
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.18,
+  "mean_pet_mm_per_day": 1.26,
+  "aridity_pet_over_p": 0.58,
+  "fraction_of_precipitation_as_snow": 0.034,
+  "high_precipitation_days_per_year": 16.55
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 8.04,
+  "evergreen_woodland": 5.09,
+  "grass_and_pasture": 28.83,
+  "shrub": 0.52,
+  "crops": 53.11,
+  "urban": 4.24
+ },
+ "soils": {
+  "sand_percent": 47.29,
+  "silt_percent": 31.0,
+  "clay_percent": 21.72,
+  "organic_percent": 0.61,
+  "total_available_water_capacity_mm": 95.72,
+  "root_depth_m": 1.27,
+  "depth_to_bedrock_m": 7.66
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 3.55,
+  "low_productivity_fractured_aquifer": 5.56,
+  "highly_productive_intergranular_aquifer": 1.43,
+  "moderately_productive_intergranular_aquifer": 28.7,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 59.62
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

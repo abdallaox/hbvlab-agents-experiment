@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "Colne at Denham is a groundwater-fed (chalk) catchment with partial urban cover. Its observed flow is very damped (0.09 to 2.1 mm/d) and only about 25% of rainfall becomes runoff. I calibrated with DDS on NSE over 1971\u20131997, after a 1-year warm-up, using about 9,950 model runs. The final run gave NSE 0.76, KGE 0.82, PBIAS +4% and r 0.88. An earlier run of the same model reached 0.78 with different starting stores, but later calibration overwrote that parameter set. I did not do a split-sample test, so I have no independent estimate of skill in 1998\u20132008.\n\nTo match the water balance the model needs heavy evaporation losses: a very large FC (about 1800 mm) with LP about 0.57. Two more choices hold the model up:\n- **Slow outflow:** the lower store drains slowly (K2 about 0.012/d) with PERC about 1.4 mm/d.\n- **Winter rain loss:** TT 1.5\u00b0C with SFCF 0.54 cuts part of the cold-weather rain, acting as a winter loss. This may stand in for groundwater abstraction or leakage out of the catchment, and it may carry over poorly to warmer winters.\n\nA version with realistic snow settings scored about 0.757, and one with FC capped at 450 mm scored about 0.72.\n\nWeaknesses: timing of sharp storm peaks from urban runoff, the size of drought-year recessions, and possible bias if abstraction rates change. Because FC is so large, the result depends on the starting soil store. The model starts at 900 mm (close to its end-1997 level); if it is restarted from near-empty stores, flows will be underestimated for years. My confidence in individual parameters is moderate to low because several are interdependent.",
+ "parameters": {
+  "FC": 1776.1247596004966,
+  "LP": 0.5697020692472289,
+  "BETA": 2.571652645025105,
+  "TT": 1.5043373786626912,
+  "CFMAX": 11.926988693318831,
+  "SFCF": 0.5402943781572206,
+  "CFR": 0.18881013234579389,
+  "CWH": 0.012514505247343176,
+  "K0": 0.4183133725819209,
+  "K1": 0.0776606945379006,
+  "K2": 0.012059381884742851,
+  "UZL": 53.38507394067458,
+  "PERC": 1.4409856386893178,
+  "MAXBAS": 2.5359123512437822
+ },
+ "ranges": {
+  "FC": [
+   10.0,
+   3000.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   12.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 900.0,
+  "upper_storage": 0.5,
+  "lower_storage": 25.0
+ },
+ "metrics_reported": {
+  "NSE": 0.7624,
+  "KGE": 0.8151,
+  "PBIAS": 4.2428,
+  "RMSE": 0.1142,
+  "MAE": 0.0861,
+  "r": 0.8778
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9950
+}

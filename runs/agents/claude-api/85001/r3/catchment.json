@@ -1,0 +1,53 @@
+{
+ "gauge_id": 85001,
+ "gauge_name": "Leven at Linnbrane",
+ "location": {
+  "latitude": 55.99,
+  "longitude": -4.58
+ },
+ "topography": {
+  "area_km2": 786.11,
+  "mean_elevation_m": 238.0,
+  "gauge_elevation_m": 5.3,
+  "max_elevation_m": 1120.0,
+  "mean_slope_m_per_km": 179.6
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 5.76,
+  "mean_pet_mm_per_day": 1.16,
+  "aridity_pet_over_p": 0.2,
+  "fraction_of_precipitation_as_snow": 0.019,
+  "high_precipitation_days_per_year": 10.09
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 9.27,
+  "evergreen_woodland": 7.79,
+  "grass_and_pasture": 51.89,
+  "shrub": 17.58,
+  "crops": 1.3,
+  "urban": 1.24
+ },
+ "soils": {
+  "sand_percent": 46.48,
+  "silt_percent": 29.19,
+  "clay_percent": 24.32,
+  "organic_percent": 11.49,
+  "total_available_water_capacity_mm": 127.38,
+  "root_depth_m": 1.07,
+  "depth_to_bedrock_m": 3.2
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 3.46,
+  "low_productivity_fractured_aquifer": 30.6,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 11.4,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 52.03
+ },
+ "reservoirs": {
+  "number": 4,
+  "total_capacity_megalitres": 180975.0
+ }
+}

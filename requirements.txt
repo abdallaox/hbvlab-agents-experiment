@@ -1,0 +1,10 @@
+# Environment of the agent experiment. HBV_Lab is installed from the sibling clone (editable) during development;
+# for the final runs pin the released version instead: HBV-Lab[mcp]==<version used>.
+HBV-Lab[mcp] @ git+https://github.com/abdallaox/HBV_python_implementation@v1.5.1
+mcp==1.30.0
+httpx==0.28.1
+PyYAML==6.0.4
+numpy==2.5.5
+pandas==3.1.1
+scipy==1.18.1
+anthropic==2.14.0

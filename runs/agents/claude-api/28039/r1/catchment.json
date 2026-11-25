@@ -1,0 +1,53 @@
+{
+ "gauge_id": 28039,
+ "gauge_name": "Rea at Calthorpe Park",
+ "location": {
+  "latitude": 52.46,
+  "longitude": -1.9
+ },
+ "topography": {
+  "area_km2": 73.68,
+  "mean_elevation_m": 168.0,
+  "gauge_elevation_m": 104.2,
+  "max_elevation_m": 290.8,
+  "mean_slope_m_per_km": 44.4
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.12,
+  "mean_pet_mm_per_day": 1.4,
+  "aridity_pet_over_p": 0.66,
+  "fraction_of_precipitation_as_snow": 0.024,
+  "high_precipitation_days_per_year": 17.76
+ },
+ "land_cover_percent": {
+  "dominant": "Urban",
+  "deciduous_woodland": 5.63,
+  "evergreen_woodland": 0.03,
+  "grass_and_pasture": 13.45,
+  "shrub": 0.08,
+  "crops": 2.63,
+  "urban": 76.68
+ },
+ "soils": {
+  "sand_percent": 44.03,
+  "silt_percent": 30.64,
+  "clay_percent": 25.32,
+  "organic_percent": 0.44,
+  "total_available_water_capacity_mm": 102.43,
+  "root_depth_m": 1.27,
+  "depth_to_bedrock_m": 1.0
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 15.25,
+  "low_productivity_fractured_aquifer": 18.36,
+  "highly_productive_intergranular_aquifer": 3.75,
+  "moderately_productive_intergranular_aquifer": 29.43,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 31.68
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 2400.0
+ }
+}

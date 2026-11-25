@@ -1,0 +1,100 @@
+{
+ "model_id": "model-4",
+ "diagnosis": "Performance is poor. Daily NSE is about 0.28\u20130.30 over 1971\u20131997 (KGE about 0.57, r about 0.59, bias within \u00b17%). The Wandle is a chalk-fed, heavily urbanised catchment. Observed runoff is only about 0.13 mm/day, roughly 6% of rainfall, and the hydrograph is strongly damped (peak about 1.6 mm/day). Most recharge evidently leaves the catchment through inter-catchment groundwater flow or abstraction. Standard HBV cannot lose water, so I made the lower store a pure sink (K2 = 0). PERC (about 1.07 mm/day) therefore acts as a loss. The upper store, which drains very slowly (K1 about 0.0017/day), plays the chalk aquifer, and a very large soil store (FC about 5000 mm, LP 0.97) adds memory from one year to the next. These values are not physically meaningful; they are tricks that make the model behave like the catchment. Weaknesses: the model misses the timing of seasonal and drought recovery (correlation is only about 0.6), misses short urban storm peaks, and does not simulate the 1976 and 1990\u201392 droughts well. Starting stores are set near equilibrium for late 1997 (soil about 3070 mm, upper store 64 mm). Because the soil store is so large, the result depends strongly on these starting values: default starting states would give far too little flow for several years. Confidence in individual parameters is low because several are strongly interdependent. Expected NSE in 1998\u20132008 is about 0.2\u20130.3.",
+ "parameters": {
+  "FC": 4975.0837562325605,
+  "LP": 0.9711454619764232,
+  "BETA": 1.2862102662244579,
+  "K0": 0.3120795937009597,
+  "K1": 0.001730610461472904,
+  "K2": 9.953947481395906e-10,
+  "UZL": 272.474004035885,
+  "PERC": 1.0706240578514439,
+  "MAXBAS": 1.9216869360941986,
+  "TT": 0.23756229323374026,
+  "CFMAX": 9.95867751076186,
+  "SFCF": 1.1816819249650676,
+  "CFR": 0.17582571101386,
+  "CWH": 0.00017385131018416225
+ },
+ "ranges": {
+  "FC": [
+   500.0,
+   6000.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "K0": [
+   0.01,
+   0.5
+  ],
+  "K1": [
+   0.0005,
+   0.02
+  ],
+  "K2": [
+   0.0,
+   1e-09
+  ],
+  "UZL": [
+   20.0,
+   300.0
+  ],
+  "PERC": [
+   0.3,
+   3.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "TT": [
+   -1.0,
+   2.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.8,
+   1.2
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 3070.0,
+  "upper_storage": 64.0,
+  "lower_storage": 0.0
+ },
+ "metrics_reported": {
+  "NSE": 0.2831,
+  "KGE": 0.5478,
+  "PBIAS": -1.5969,
+  "RMSE": 0.0917,
+  "MAE": 0.064,
+  "r": 0.5817
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9917
+}

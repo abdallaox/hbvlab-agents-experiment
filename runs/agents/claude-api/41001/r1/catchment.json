@@ -1,0 +1,53 @@
+{
+ "gauge_id": 41001,
+ "gauge_name": "Nunningham Stream at Tilley Bridge",
+ "location": {
+  "latitude": 50.89,
+  "longitude": 0.36
+ },
+ "topography": {
+  "area_km2": 17.11,
+  "mean_elevation_m": 49.0,
+  "gauge_elevation_m": 3.8,
+  "max_elevation_m": 133.4,
+  "mean_slope_m_per_km": 67.5
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.19,
+  "mean_pet_mm_per_day": 1.36,
+  "aridity_pet_over_p": 0.62,
+  "fraction_of_precipitation_as_snow": 0.011,
+  "high_precipitation_days_per_year": 20.88
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 14.41,
+  "evergreen_woodland": 0.77,
+  "grass_and_pasture": 72.88,
+  "shrub": 0.0,
+  "crops": 7.64,
+  "urban": 4.16
+ },
+ "soils": {
+  "sand_percent": 35.32,
+  "silt_percent": 37.04,
+  "clay_percent": 27.63,
+  "organic_percent": 0.48,
+  "total_available_water_capacity_mm": 107.63,
+  "root_depth_m": 1.29,
+  "depth_to_bedrock_m": 4.61
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 56.36,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 43.64
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

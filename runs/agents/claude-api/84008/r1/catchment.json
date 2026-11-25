@@ -1,0 +1,53 @@
+{
+ "gauge_id": 84008,
+ "gauge_name": "Rotten Calder Water at Redlees",
+ "location": {
+  "latitude": 55.82,
+  "longitude": -4.11
+ },
+ "topography": {
+  "area_km2": 55.41,
+  "mean_elevation_m": 192.0,
+  "gauge_elevation_m": 16.8,
+  "max_elevation_m": 372.5,
+  "mean_slope_m_per_km": 53.0
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.39,
+  "mean_pet_mm_per_day": 1.25,
+  "aridity_pet_over_p": 0.37,
+  "fraction_of_precipitation_as_snow": 0.017,
+  "high_precipitation_days_per_year": 14.27
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 6.56,
+  "evergreen_woodland": 5.56,
+  "grass_and_pasture": 51.72,
+  "shrub": 11.9,
+  "crops": 6.26,
+  "urban": 16.82
+ },
+ "soils": {
+  "sand_percent": 38.31,
+  "silt_percent": 31.86,
+  "clay_percent": 29.82,
+  "organic_percent": 6.44,
+  "total_available_water_capacity_mm": 121.55,
+  "root_depth_m": 1.29,
+  "depth_to_bedrock_m": 10.82
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.44,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 34.08,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 63.79
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

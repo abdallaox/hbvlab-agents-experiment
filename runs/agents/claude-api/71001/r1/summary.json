@@ -1,0 +1,41 @@
+{
+ "agent": "claude-api",
+ "model_requested": "claude-opus-5-5",
+ "gauge": 71001,
+ "repeat": 1,
+ "status": "submitted",
+ "tool_calls": 18,
+ "tool_calls_by_name": {
+  "create_model": 2,
+  "load_data": 4,
+  "get_parameter_ranges": 1,
+  "set_parameter_ranges": 2,
+  "calibrate": 4,
+  "clone_model": 2,
+  "run_model": 2,
+  "copy_parameters": 1
+ },
+ "tool_errors": 0,
+ "rejected_calls": 0,
+ "api_turns": 13,
+ "reminders": 0,
+ "input_tokens": 28,
+ "cache_write_tokens": 11050,
+ "cache_read_tokens": 133875,
+ "output_tokens": 2800,
+ "cost_usd": 0.1381,
+ "models_served": [
+  "claude-opus-5-5"
+ ],
+ "stop_reasons": {
+  "tool_use": 13
+ },
+ "submitted": true,
+ "prompt_template_sha256": "1d0b47044fd8e16ad84e09d85b6faac006b0d2329fdfa2b185231d8b2507528d",
+ "tools_sha256": "55be54dd7329c29fae0e1954321c679144375bcee58bfa6669c53e78879ce2f8",
+ "model_runs": 9412,
+ "wall_seconds": 670.5,
+ "prompt_tokens": 144953,
+ "completion_tokens": 2800,
+ "cached_tokens": 133875
+}

@@ -1,0 +1,53 @@
+{
+ "gauge_id": 11003,
+ "gauge_name": "Don at Bridge of Alford",
+ "location": {
+  "latitude": 57.24,
+  "longitude": -2.72
+ },
+ "topography": {
+  "area_km2": 509.94,
+  "mean_elevation_m": 408.0,
+  "gauge_elevation_m": 133.2,
+  "max_elevation_m": 873.9,
+  "mean_slope_m_per_km": 161.0
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.59,
+  "mean_pet_mm_per_day": 1.13,
+  "aridity_pet_over_p": 0.44,
+  "fraction_of_precipitation_as_snow": 0.112,
+  "high_precipitation_days_per_year": 14.71
+ },
+ "land_cover_percent": {
+  "dominant": "Shrubs",
+  "deciduous_woodland": 0.7,
+  "evergreen_woodland": 17.05,
+  "grass_and_pasture": 29.12,
+  "shrub": 48.31,
+  "crops": 4.78,
+  "urban": 0.15
+ },
+ "soils": {
+  "sand_percent": 52.91,
+  "silt_percent": 29.48,
+  "clay_percent": 17.61,
+  "organic_percent": 5.64,
+  "total_available_water_capacity_mm": 94.55,
+  "root_depth_m": 0.96,
+  "depth_to_bedrock_m": 1.21
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 27.34,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 15.15,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 57.51
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

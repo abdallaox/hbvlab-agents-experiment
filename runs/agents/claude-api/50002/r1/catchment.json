@@ -1,0 +1,53 @@
+{
+ "gauge_id": 50002,
+ "gauge_name": "Torridge at Torrington",
+ "location": {
+  "latitude": 50.95,
+  "longitude": -4.14
+ },
+ "topography": {
+  "area_km2": 664.25,
+  "mean_elevation_m": 160.0,
+  "gauge_elevation_m": 13.9,
+  "max_elevation_m": 619.5,
+  "mean_slope_m_per_km": 81.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.31,
+  "mean_pet_mm_per_day": 1.42,
+  "aridity_pet_over_p": 0.43,
+  "fraction_of_precipitation_as_snow": 0.003,
+  "high_precipitation_days_per_year": 13.39
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 9.48,
+  "evergreen_woodland": 4.16,
+  "grass_and_pasture": 61.88,
+  "shrub": 3.58,
+  "crops": 18.69,
+  "urban": 1.86
+ },
+ "soils": {
+  "sand_percent": 40.58,
+  "silt_percent": 35.37,
+  "clay_percent": 24.05,
+  "organic_percent": 1.06,
+  "total_available_water_capacity_mm": 102.1,
+  "root_depth_m": 1.2,
+  "depth_to_bedrock_m": 1.04
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 76.41,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 21.52,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 2.08
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 3170.0
+ }
+}

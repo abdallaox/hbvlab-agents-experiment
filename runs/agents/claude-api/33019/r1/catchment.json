@@ -1,0 +1,53 @@
+{
+ "gauge_id": 33019,
+ "gauge_name": "Thet at Melford Bridge",
+ "location": {
+  "latitude": 52.41,
+  "longitude": 0.76
+ },
+ "topography": {
+  "area_km2": 311.37,
+  "mean_elevation_m": 39.0,
+  "gauge_elevation_m": 10.5,
+  "max_elevation_m": 71.3,
+  "mean_slope_m_per_km": 13.9
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 1.69,
+  "mean_pet_mm_per_day": 1.45,
+  "aridity_pet_over_p": 0.86,
+  "fraction_of_precipitation_as_snow": 0.019,
+  "high_precipitation_days_per_year": 17.69
+ },
+ "land_cover_percent": {
+  "dominant": "Crops",
+  "deciduous_woodland": 9.77,
+  "evergreen_woodland": 6.39,
+  "grass_and_pasture": 14.94,
+  "shrub": 0.71,
+  "crops": 63.1,
+  "urban": 4.9
+ },
+ "soils": {
+  "sand_percent": 55.92,
+  "silt_percent": 24.56,
+  "clay_percent": 19.51,
+  "organic_percent": 0.82,
+  "total_available_water_capacity_mm": 93.45,
+  "root_depth_m": 1.28,
+  "depth_to_bedrock_m": 6.01
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 11.52,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 0.0,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 34.76,
+  "low_productivity_intergranular_aquifer": 10.08,
+  "rocks_with_essentially_no_groundwater": 41.49
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "gauge_id": 7002,
+ "gauge_name": "Findhorn at Forres",
+ "location": {
+  "latitude": 57.6,
+  "longitude": -3.64
+ },
+ "topography": {
+  "area_km2": 781.77,
+  "mean_elevation_m": 442.0,
+  "gauge_elevation_m": 9.6,
+  "max_elevation_m": 935.3,
+  "mean_slope_m_per_km": 117.2
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.87,
+  "mean_pet_mm_per_day": 1.09,
+  "aridity_pet_over_p": 0.38,
+  "fraction_of_precipitation_as_snow": 0.072,
+  "high_precipitation_days_per_year": 11.74
+ },
+ "land_cover_percent": {
+  "dominant": "Shrubs",
+  "deciduous_woodland": 2.26,
+  "evergreen_woodland": 10.72,
+  "grass_and_pasture": 17.04,
+  "shrub": 64.39,
+  "crops": 0.43,
+  "urban": 0.06
+ },
+ "soils": {
+  "sand_percent": 58.65,
+  "silt_percent": 20.89,
+  "clay_percent": 20.45,
+  "organic_percent": 14.64,
+  "total_available_water_capacity_mm": 124.19,
+  "root_depth_m": 0.9,
+  "depth_to_bedrock_m": 1.71
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 4.65,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 19.27,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 76.02
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

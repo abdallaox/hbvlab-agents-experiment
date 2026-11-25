@@ -1,0 +1,53 @@
+{
+ "gauge_id": 54008,
+ "gauge_name": "Teme at Tenbury",
+ "location": {
+  "latitude": 52.31,
+  "longitude": -2.59
+ },
+ "topography": {
+  "area_km2": 1124.62,
+  "mean_elevation_m": 231.0,
+  "gauge_elevation_m": 48.0,
+  "max_elevation_m": 544.5,
+  "mean_slope_m_per_km": 116.1
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 2.3,
+  "mean_pet_mm_per_day": 1.35,
+  "aridity_pet_over_p": 0.59,
+  "fraction_of_precipitation_as_snow": 0.023,
+  "high_precipitation_days_per_year": 16.44
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 6.73,
+  "evergreen_woodland": 5.1,
+  "grass_and_pasture": 60.82,
+  "shrub": 1.81,
+  "crops": 23.79,
+  "urban": 1.59
+ },
+ "soils": {
+  "sand_percent": 41.98,
+  "silt_percent": 35.44,
+  "clay_percent": 22.58,
+  "organic_percent": 1.41,
+  "total_available_water_capacity_mm": 84.44,
+  "root_depth_m": 0.99,
+  "depth_to_bedrock_m": 2.81
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 4.77,
+  "low_productivity_fractured_aquifer": 57.51,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 18.49,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 19.22
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "model_id": "model-2",
+ "diagnosis": "I calibrated the HBV model on daily data from 1971-10 to 1997-12, after a one-year warm-up, using DDS to maximise NSE. The best fit is NSE 0.715, KGE 0.80, volume bias +1.5% and r 0.85.\n\nTwo separate DDS runs from different random seeds both reached NSE of about 0.715. They agree closely on FC (about 350 mm), K1 (about 0.22), K2 (about 0.047), PERC (about 2.9), MAXBAS (about 2.5), TT (about 1.1\u20131.4 \u00b0C) and SFCF (about 0.7). So I am fairly confident about the parameters that set the water balance and the routing. LP, BETA, K0 and UZL are poorly identified: very different values give the same fit. BETA, CFR and CWH ended at their lower range limits.\n\nThe fit is only moderate for a catchment this wet. The likely reasons are:\n- Snow on the high Cairngorm ground: a single lumped temperature store cannot represent elevation bands. The low SFCF (about 0.7) probably partly makes up for errors in the snow and rain inputs.\n- Possible effects of reservoirs and water transfers on flows.\n- Timing errors in peak flows for this large catchment of 2850 km\u00b2.\n\nLow summer flows and the timing of spring snowmelt are probably the weakest periods. I set the starting stores (soil moisture 170 mm, lower store 30 mm) close to their long-run levels so they don't drift at the start of the run. I did not test the model on a separate held-back period, so I expect NSE in 1998\u20132008 to be around 0.65\u20130.72.",
+ "parameters": {
+  "FC": 354.0525570124019,
+  "LP": 0.30348203369071347,
+  "BETA": 0.5138380586548605,
+  "TT": 1.133866692299546,
+  "CFMAX": 4.318698745972088,
+  "SFCF": 0.7400095133920276,
+  "CFR": 0.0004525734185032806,
+  "CWH": 0.0002628208731186135,
+  "K0": 0.31552264985177886,
+  "K1": 0.2182186366106611,
+  "K2": 0.04633356248719196,
+  "UZL": 32.14702840199941,
+  "PERC": 2.914459592379832,
+  "MAXBAS": 2.3996631788101013
+ },
+ "ranges": {
+  "FC": [
+   30.0,
+   800.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 170.0,
+  "upper_storage": 2.0,
+  "lower_storage": 30.0
+ },
+ "metrics_reported": {
+  "NSE": 0.7154,
+  "KGE": 0.7966,
+  "PBIAS": 1.4856,
+  "RMSE": 0.8018,
+  "MAE": 0.5002,
+  "r": 0.8467
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 7004
+}

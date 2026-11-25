@@ -1,0 +1,53 @@
+{
+ "gauge_id": 84001,
+ "gauge_name": "Kelvin at Killermont",
+ "location": {
+  "latitude": 55.91,
+  "longitude": -4.31
+ },
+ "topography": {
+  "area_km2": 335.21,
+  "mean_elevation_m": 138.0,
+  "gauge_elevation_m": 27.0,
+  "max_elevation_m": 577.4,
+  "mean_slope_m_per_km": 77.6
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.53,
+  "mean_pet_mm_per_day": 1.24,
+  "aridity_pet_over_p": 0.35,
+  "fraction_of_precipitation_as_snow": 0.014,
+  "high_precipitation_days_per_year": 12.62
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 12.7,
+  "evergreen_woodland": 4.08,
+  "grass_and_pasture": 46.65,
+  "shrub": 7.74,
+  "crops": 10.24,
+  "urban": 17.05
+ },
+ "soils": {
+  "sand_percent": 43.46,
+  "silt_percent": 34.05,
+  "clay_percent": 22.49,
+  "organic_percent": 4.2,
+  "total_available_water_capacity_mm": 105.59,
+  "root_depth_m": 1.13,
+  "depth_to_bedrock_m": 8.37
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 1.09,
+  "low_productivity_fractured_aquifer": 4.56,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 27.99,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 66.16
+ },
+ "reservoirs": {
+  "number": 2,
+  "total_capacity_megalitres": 5684.0
+ }
+}

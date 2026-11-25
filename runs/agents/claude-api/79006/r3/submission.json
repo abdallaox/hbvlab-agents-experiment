@@ -1,0 +1,100 @@
+{
+ "model_id": "model-1",
+ "diagnosis": "Nith at Drumlanrig is a wet, steep catchment that responds quickly to rain, and snow plays only a small part. I calibrated on 1971-1997 (after a one-year warm-up) using DDS with NSE as the objective: two runs of 3000 and 2000 model runs. The calibration NSE is 0.842 (KGE 0.89, PBIAS +1.3%, r 0.92), and it stopped improving at about 0.842 in both runs. The fitted response is very fast: K1 is about 0.65, K2 about 0.19 and MAXBAS about 2.3 days. FC is about 159 mm, close to the soils' available water capacity, LP is about 0.98 and BETA about 2.9. The main weakness is the largest floods: the highest simulated flow is 45 mm/day against an observed 63. Some of the low-flow recession may also be wrong, because the rocks hold little groundwater and the small reservoir may affect flows. The snow parameters (CFR and CWH sit at their lower limits, TT and CFMAX) have little effect and are poorly identified. I'm fairly confident in the soil and fast-response parameters, but K0/UZL and K1 trade off against each other. I did no separate split-sample test, so I can only expect performance in 1998-2008 to be slightly below the calibration value, roughly NSE 0.80-0.84.",
+ "parameters": {
+  "TT": 0.24953140043070657,
+  "CFMAX": 2.763775646379632,
+  "SFCF": 0.8576389010021046,
+  "CFR": 0.0007728366771446301,
+  "CWH": 0.0002082386496647516,
+  "FC": 158.58345441558714,
+  "LP": 0.9787723316148518,
+  "BETA": 2.8761119746424044,
+  "K0": 0.28117543681243196,
+  "K1": 0.6479422346612834,
+  "K2": 0.19289928552108856,
+  "UZL": 11.944268366181246,
+  "PERC": 5.0897817504828495,
+  "MAXBAS": 2.3051104277659946
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   30.0,
+   800.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.95
+  ],
+  "K2": [
+   1e-06,
+   0.4
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   6.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 30.0,
+  "upper_storage": 10.0,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8421,
+  "KGE": 0.891,
+  "PBIAS": 1.2611,
+  "RMSE": 1.6874,
+  "MAE": 0.8679,
+  "r": 0.918
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 5003
+}

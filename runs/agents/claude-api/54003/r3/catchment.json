@@ -1,0 +1,53 @@
+{
+ "gauge_id": 54003,
+ "gauge_name": "Vyrnwy at Vyrnwy Reservoir",
+ "location": {
+  "latitude": 52.76,
+  "longitude": -3.46
+ },
+ "topography": {
+  "area_km2": 74.03,
+  "mean_elevation_m": 452.0,
+  "gauge_elevation_m": 226.3,
+  "max_elevation_m": 666.5,
+  "mean_slope_m_per_km": 174.8
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 5.4,
+  "mean_pet_mm_per_day": 1.31,
+  "aridity_pet_over_p": 0.24,
+  "fraction_of_precipitation_as_snow": 0.026,
+  "high_precipitation_days_per_year": 14.02
+ },
+ "land_cover_percent": {
+  "dominant": "Shrubs",
+  "deciduous_woodland": 1.21,
+  "evergreen_woodland": 14.8,
+  "grass_and_pasture": 26.31,
+  "shrub": 51.48,
+  "crops": 0.0,
+  "urban": 0.03
+ },
+ "soils": {
+  "sand_percent": 43.44,
+  "silt_percent": 36.3,
+  "clay_percent": 20.26,
+  "organic_percent": 9.06,
+  "total_available_water_capacity_mm": 101.02,
+  "root_depth_m": 0.73,
+  "depth_to_bedrock_m": 0.99
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 66.87,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 0.0,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 33.13
+ },
+ "reservoirs": {
+  "number": 1,
+  "total_capacity_megalitres": 59852.0
+ }
+}

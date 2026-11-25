@@ -1,0 +1,100 @@
+{
+ "model_id": "model-2",
+ "diagnosis": "The gauge sits at the outlet of Lake Vyrnwy, a reservoir that supplies Liverpool. Observed flow averages about 2.2 mm/day while precipitation averages 5.4 mm/day and PET only 1.3 mm/day. Much of the water is therefore abstracted, and standard HBV cannot remove it through evapotranspiration. The default parameters overestimated flow by 88% (NSE -0.70).\n\nTo make the model lose water at a steady rate, I fixed K2 at about 1e-6, so water percolating to the lower zone (PERC about 2 mm/day) effectively leaves the system. A large FC (about 500 mm, at its upper search bound), a low LP and a slow upper zone (K1 about 0.013, UZL about 190) produce the damped, seasonal response of a reservoir that fills in autumn before spilling.\n\nCalibration (DDS on NSE, 1971\u20131997): NSE 0.63, KGE 0.75, bias -5.5%. With the same parameters, 1987\u20131997 alone gives NSE 0.66 with near-zero bias. Recalibrating on 1987\u20131997 raised that period's NSE only to 0.67 with similar parameters, which suggests the calibration holds steady over time.\n\nWeak points: compensation-flow baseflow, the timing of reservoir spills, and summer droughts are all managed operations, not natural rainfall-runoff, so peaks and recessions are only partly captured. The individual parameters have no physical meaning, and FC sits at its search bound. Confidence for 1998\u20132008 is moderate: expect NSE of about 0.55\u20130.65 if reservoir operation does not change.",
+ "parameters": {
+  "TT": 1.6344748310629131,
+  "CFMAX": 8.1829180462004,
+  "SFCF": 0.9845687479612495,
+  "CFR": 0.07270425706952761,
+  "CWH": 0.0012446582102499304,
+  "K0": 0.388681388745156,
+  "K1": 0.012579798471030357,
+  "K2": 1.9987322903768086e-06,
+  "UZL": 191.45126740340632,
+  "PERC": 2.0409475639013013,
+  "MAXBAS": 2.5259468850457134,
+  "FC": 497.9712557761594,
+  "LP": 0.3296681541384757,
+  "BETA": 0.8055326697374852
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.5
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   1e-06,
+   2e-06
+  ],
+  "UZL": [
+   0.0,
+   500.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   10.0
+  ],
+  "FC": [
+   10.0,
+   500.0
+  ],
+  "LP": [
+   0.1,
+   1.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 350.0,
+  "upper_storage": 110.0,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.626,
+  "KGE": 0.7508,
+  "PBIAS": -5.481,
+  "RMSE": 2.2296,
+  "MAE": 1.3242,
+  "r": 0.7926
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 9210
+}

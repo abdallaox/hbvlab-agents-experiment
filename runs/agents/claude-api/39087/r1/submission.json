@@ -1,0 +1,100 @@
+{
+ "model_id": "model-2",
+ "diagnosis": "Calibrated with DDS on NSE over 1971-1997 (after a 1-year warm-up). Daily NSE is 0.80, KGE 0.85 and r 0.90. In a split-sample test (calibrated 1971-84, validated 1984-97) the validation NSE was 0.83, so the parameters transfer well over time and NSE fell by only about 0.02 to 0.03 against a calibration on the validation period itself. The main weakness is a persistent water-balance shortfall: simulated flow is about 10-15% below observed, and the gap is somewhat larger in the later period. The observed runoff ratio (~0.68) is high for the climate, probably because 39% of the catchment is urban (Swindon), with impervious runoff and possibly imported sewage effluent. To make up for this, the calibration pushed LP above 1 (1.6), which lowers actual ET, and set FC at about 376 mm with a high BETA. SFCF went to its upper bound, but this has little effect because snow is only about 1% of precipitation. Peak flows are somewhat under-simulated (simulated maximum about 15 mm/d against 24 observed). Fast response comes from K1 of about 0.45 and MAXBAS of about 2.8. I'm fairly confident in the response parameters (K1, K2, PERC, MAXBAS), but less so in the soil/ET parameters, which partly make up for missing inputs. If urban effluent kept increasing, the bias could grow in 1998-2008.",
+ "parameters": {
+  "TT": -0.9306839937773466,
+  "CFMAX": 3.497981830882252,
+  "SFCF": 1.597341688181105,
+  "CFR": 0.2843325702504057,
+  "CWH": 5.748828312770885e-05,
+  "FC": 375.944618831734,
+  "LP": 1.615963781111865,
+  "BETA": 5.727392249422865,
+  "K0": 0.6195699415079386,
+  "K1": 0.45010374390614627,
+  "K2": 0.048501694597917984,
+  "UZL": 24.975026168101508,
+  "PERC": 2.120542437548457,
+  "MAXBAS": 2.81502117803163
+ },
+ "ranges": {
+  "TT": [
+   -3.0,
+   3.0
+  ],
+  "CFMAX": [
+   0.5,
+   10.0
+  ],
+  "SFCF": [
+   0.4,
+   1.6
+  ],
+  "CFR": [
+   0.0,
+   0.3
+  ],
+  "CWH": [
+   0.0,
+   0.3
+  ],
+  "FC": [
+   30.0,
+   700.0
+  ],
+  "LP": [
+   0.1,
+   3.0
+  ],
+  "BETA": [
+   0.5,
+   8.0
+  ],
+  "K0": [
+   0.01,
+   0.99
+  ],
+  "K1": [
+   0.001,
+   0.6
+  ],
+  "K2": [
+   0.0005,
+   0.2
+  ],
+  "UZL": [
+   0.0,
+   150.0
+  ],
+  "PERC": [
+   0.0,
+   15.0
+  ],
+  "MAXBAS": [
+   1.0,
+   7.0
+  ]
+ },
+ "initial_states": {
+  "snowpack": 0.0,
+  "liquid_water": 0.0,
+  "soil_moisture": 30.0,
+  "upper_storage": 10.0,
+  "lower_storage": 20.0
+ },
+ "metrics_reported": {
+  "NSE": 0.8015,
+  "KGE": 0.8531,
+  "PBIAS": -10.822,
+  "RMSE": 0.646,
+  "MAE": 0.3534,
+  "r": 0.9008
+ },
+ "data_window": {
+  "start": "1970-10-01 00:00:00",
+  "end": "1997-12-31 00:00:00",
+  "warmup_end": "1971-09-30 00:00:00",
+  "obs_column": "Discharge"
+ },
+ "model_runs_used": 8007
+}

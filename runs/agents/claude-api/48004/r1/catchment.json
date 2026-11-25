@@ -1,0 +1,53 @@
+{
+ "gauge_id": 48004,
+ "gauge_name": "Warleggan at Trengoffe",
+ "location": {
+  "latitude": 50.48,
+  "longitude": -4.6
+ },
+ "topography": {
+  "area_km2": 25.26,
+  "mean_elevation_m": 219.0,
+  "gauge_elevation_m": 70.3,
+  "max_elevation_m": 307.6,
+  "mean_slope_m_per_km": 93.8
+ },
+ "climate_1970_1997": {
+  "mean_precipitation_mm_per_day": 3.99,
+  "mean_pet_mm_per_day": 1.41,
+  "aridity_pet_over_p": 0.35,
+  "fraction_of_precipitation_as_snow": 0.002,
+  "high_precipitation_days_per_year": 14.46
+ },
+ "land_cover_percent": {
+  "dominant": "Grass and Pasture",
+  "deciduous_woodland": 5.47,
+  "evergreen_woodland": 1.33,
+  "grass_and_pasture": 86.46,
+  "shrub": 3.64,
+  "crops": 1.05,
+  "urban": 0.38
+ },
+ "soils": {
+  "sand_percent": 74.39,
+  "silt_percent": 16.64,
+  "clay_percent": 8.97,
+  "organic_percent": 1.61,
+  "total_available_water_capacity_mm": 49.12,
+  "root_depth_m": 0.48,
+  "depth_to_bedrock_m": 1.0
+ },
+ "hydrogeology_percent_of_area": {
+  "highly_productive_fractured_aquifer": 0.0,
+  "moderately_productive_fractured_aquifer": 0.0,
+  "low_productivity_fractured_aquifer": 65.4,
+  "highly_productive_intergranular_aquifer": 0.0,
+  "moderately_productive_intergranular_aquifer": 6.24,
+  "low_productivity_intergranular_aquifer": 0.0,
+  "rocks_with_essentially_no_groundwater": 28.37
+ },
+ "reservoirs": {
+  "number": 0,
+  "total_capacity_megalitres": 0.0
+ }
+}
